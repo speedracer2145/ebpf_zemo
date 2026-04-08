@@ -1,0 +1,55 @@
+import os
+import requests
+import subprocess
+
+class DataCollector:
+    def __init__(self, target_dir="ebpf_embed/data"):
+        self.target_dir = target_dir
+        os.makedirs(target_dir, exist_ok=True)
+        
+        # Repositories and specific files to pull
+        self.SOURCES = {
+            "vbpf/ebpf-samples": [
+                "cilium-examples/xdp_bpf_bpfel.o",
+                "cilium-examples/kprobe_bpf_bpfel.o",
+                "cilium-examples/fentry_bpf_bpfel.o",
+                "cilium-examples/uprobe_bpf_bpfel.o"
+            ],
+            # We can add more sources here
+        }
+
+    def download_file(self, repo, path):
+        """Downloads a raw file from GitHub."""
+        url = f"https://github.com/v1v/ebpf-samples/raw/master/xdp_drop_kern.o"
+        # Actually use the subagent's found repo: vbpf/ebpf-samples
+        url = f"https://github.com/{repo}/raw/master/{path}"
+        
+        filename = path.split("/")[-1]
+        dest_path = os.path.join(self.target_dir, filename)
+        
+        print(f"Downloading {filename} from {repo}...")
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            with open(dest_path, "wb") as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            print(f"Saved to {dest_path}")
+            return dest_path
+        else:
+            print(f"Failed to download {filename} (Status: {response.status_code})")
+            return None
+
+    def collect(self):
+        """Main collection loop."""
+        collected_files = []
+        for repo, paths in self.SOURCES.items():
+            for path in paths:
+                file_path = self.download_file(repo, path)
+                if file_path:
+                    collected_files.append(file_path)
+        return collected_files
+
+if __name__ == "__main__":
+    collector = DataCollector()
+    files = collector.collect()
+    print(f"Collection complete. Total files: {len(files)}")

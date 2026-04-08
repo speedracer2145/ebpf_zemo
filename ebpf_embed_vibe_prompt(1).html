@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>eBPF-Embed — Vibe Coding Prompt</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #11111a;
+    --surface2: #1a1a28;
+    --border: #2a2a40;
+    --purple: #7c5cfc;
+    --purple-dim: #3d2e7e;
+    --teal: #00e5c0;
+    --teal-dim: #004d40;
+    --coral: #ff6b6b;
+    --coral-dim: #5c1f1f;
+    --amber: #ffc84a;
+    --text: #e8e6f0;
+    --text-dim: #7a7890;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Syne', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 32px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 40px;
+    margin-bottom: 48px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--purple-dim);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: var(--sans);
+    font-size: clamp(32px, 6vw, 56px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  h1 .accent { color: var(--teal); }
+  h1 .dim { color: var(--text-dim); }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 13px;
+    max-width: 560px;
+    line-height: 1.7;
+  }
+
+  .subtitle strong { color: var(--amber); font-weight: 700; }
+
+  /* Section headers */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--purple);
+    letter-spacing: 0.1em;
+    border: 1px solid var(--purple-dim);
+    padding: 2px 8px;
+    border-radius: 2px;
+  }
+
+  .section-title {
+    font-family: var(--sans);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  /* The main prompt box */
+  .prompt-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--purple);
+    border-radius: 4px;
+    padding: 28px 32px;
+    white-space: pre-wrap;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text);
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .prompt-block .comment {
+    color: var(--text-dim);
+    font-style: italic;
+  }
+
+  .prompt-block .highlight {
+    color: var(--teal);
+    font-weight: 700;
+  }
+
+  .prompt-block .keyword {
+    color: var(--purple);
+  }
+
+  .prompt-block .value {
+    color: var(--amber);
+  }
+
+  .prompt-block .warn {
+    color: var(--coral);
+  }
+
+  /* Info card */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .card.teal { border-left: 3px solid var(--teal); }
+  .card.coral { border-left: 3px solid var(--coral); }
+  .card.amber { border-left: 3px solid var(--amber); }
+  .card.purple { border-left: 3px solid var(--purple); }
+
+  .card-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .card.teal .card-title { color: var(--teal); }
+  .card.coral .card-title { color: var(--coral); }
+  .card.amber .card-title { color: var(--amber); }
+  .card.purple .card-title { color: var(--purple); }
+
+  .card p, .card li {
+    color: var(--text-dim);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .card ul {
+    padding-left: 20px;
+  }
+
+  .card li::marker { color: var(--text-dim); }
+
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* Copy button */
+  .copy-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--purple-dim);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 5px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.15s;
+  }
+
+  .copy-btn:hover {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* Tag row */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: var(--mono);
+  }
+
+  .tag.t { background: var(--teal-dim); color: var(--teal); border: 1px solid var(--teal); }
+  .tag.p { background: var(--purple-dim); color: var(--purple); border: 1px solid var(--purple); }
+  .tag.a { background: #3d2e00; color: var(--amber); border: 1px solid var(--amber); }
+  .tag.c { background: var(--coral-dim); color: var(--coral); border: 1px solid var(--coral); }
+
+  /* Glow line accent */
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--purple), var(--teal), transparent);
+    margin: 48px 0;
+    opacity: 0.6;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .wrapper { padding: 32px 20px 60px; }
+    .prompt-block { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="badge">// vibe coding prompt · research build</div>
+    <h1>
+      <span class="dim">build</span> eBPF<span class="accent">-Embed</span><br/>
+      <span class="dim">with me</span>
+    </h1>
+    <p class="subtitle">
+      A complete system prompt for Claude to vibe-code <strong>eBPF-Embed</strong> —
+      a semantic embedding engine that fuses LLM-generated summaries with
+      structural FCFG embeddings for eBPF bytecode analysis.
+      Plug-in complement to <strong>Yaksha-Prashna</strong>.
+    </p>
+    <div class="tags" style="margin-top: 20px;">
+      <span class="tag t">eBPF</span>
+      <span class="tag p">CLAP</span>
+      <span class="tag a">Bin2Summary</span>
+      <span class="tag c">Yaksha-Prashna</span>
+      <span class="tag t">contrastive learning</span>
+      <span class="tag p">fusion embeddings</span>
+    </div>
+  </div>
+
+  <!-- Context cards -->
+  <div class="section">
+    <div class="section-label">
+      <span class="section-num">00</span>
+      <span class="section-title">before you paste this</span>
+    </div>
+
+    <div class="card amber">
+      <div class="card-title">what this project is</div>
+      <p>
+        eBPF-Embed is a research tool that takes eBPF bytecode (.o files), extracts Function-level
+        Control Flow Graphs (FCFGs), runs them through two parallel streams — a fine-tuned
+        CLAP-ASM structural encoder and an LLM semantic summary generator — then fuses both
+        into a single enriched embedding vector. Downstream uses: NL summary generation,
+        semantic similarity detection, and as a drop-in embedding module for Yaksha-Prashna.
+      </p>
+    </div>
+
+    <div class="card teal">
+      <div class="card-title">the three papers Claude needs to know</div>
+      <ul>
+        <li><strong>Bin2Summary</strong> (ACM 2024) — strips binary functions, uses CFG random walk + seq2seq for NL summaries. We replace the random walk embedding module.</li>
+        <li><strong>CLAP</strong> (ISSTA 2024, arxiv 2402.16928) — Contrastive Language-Assembly Pre-training. Aligns assembly encoder with text encoder via NL supervision. We fine-tune clap-asm on eBPF-specific tokens.</li>
+        <li><strong>Yaksha-Prashna</strong> (IIT Hyderabad, Feb 2026) — eBPF bytecode behavioral analysis system. Uses dataflow + CFG analysis + Prolog-like DSL. We plug in as its embedding module.</li>
+      </ul>
+    </div>
+
+    <div class="card coral">
+      <div class="card-title">the core research insight</div>
+      <p>
+        Structural encoders (CLAP) fail when CFG topology is similar but semantics differ.
+        LLM summaries hallucinate on low-level register / map access details.
+        <strong>Fusion fixes both:</strong> summary fills semantic gaps, structure anchors against hallucination.
+        Nobody has done this for eBPF bytecode specifically. That's the contribution.
+      </p>
+    </div>
+  </div>
+
+  <div class="glow-line"></div>
+
+  <!-- THE MAIN PROMPT -->
+  <div class="section">
+    <div class="section-label">
+      <span class="section-num">01</span>
+      <span class="section-title">the system prompt — paste this to Claude</span>
+    </div>
+
+    <div class="prompt-block" id="main-prompt">
+      <button class="copy-btn" onclick="copyPrompt()">copy</button>
+<span class="comment"># ─────────────────────────────────────────────────────────────
+# eBPF-EMBED — VIBE CODING SYSTEM PROMPT
+# Project: Semantic Embedding Engine for eBPF Bytecode
+# Research context: IIT Hyderabad — Yaksha-Prashna complement
+# ─────────────────────────────────────────────────────────────</span>
+
+<span class="keyword">YOU ARE</span> a senior systems research engineer and ML researcher.
+We are vibe-coding a research tool called <span class="highlight">eBPF-Embed</span> together.
+Think out loud, move fast, make bold implementation choices,
+and tell me when something won't work before we hit a wall.
+
+<span class="comment">## WHAT WE ARE BUILDING</span>
+
+A <span class="highlight">semantic embedding engine for eBPF bytecode</span> that:
+  1. Takes an eBPF .o file as input
+  2. Extracts its Function-level Control Flow Graph (FCFG)
+  3. Runs two parallel streams:
+     - <span class="value">Structural stream</span>: fine-tuned CLAP-ASM encoder with eBPF-specific tokens
+     - <span class="value">Semantic stream</span>: LLM-generated natural language summary → text embedding
+  4. <span class="highlight">Fuses both</span> via cross-attention into one enriched embedding vector
+  5. Exposes three use cases from one core engine:
+     - <span class="value">--task summary</span>    → plain English description of NF behavior
+     - <span class="value">--task similarity</span> → cosine similarity between two NFs, flag conflicts
+     - <span class="value">--task embed</span>      → raw embedding vector for downstream pipelines
+
+This tool is a <span class="highlight">drop-in complement to Yaksha-Prashna</span> (IIT Hyderabad, 2026).
+It replaces the random-walk FCFG embedding module in that system.
+
+<span class="comment">## THREE PAPERS YOU MUST UNDERSTAND</span>
+
+<span class="keyword">PAPER 1 — Bin2Summary</span> (ACM ISSTA 2024, doi:10.1145/3643729)
+  - Summarizes stripped binary functions using NL sentences
+  - Uses functionality-specific code embedding (random walk on CFG) + seq2seq
+  - <span class="warn">OUR ROLE</span>: We replace their random walk embedding with our fusion encoder
+  - Their dataset: 38,167 functions from 16 projects (Coreutils etc.)
+  - Their result: 0.728 precision, 0.729 recall — we aim to beat this on eBPF subset
+
+<span class="keyword">PAPER 2 — CLAP</span> (ISSTA 2024, arxiv:2402.16928)
+  - Contrastive Language-Assembly Pre-training
+  - Dataset engine: compiles Ubuntu repo → assembly, uses GPT to generate explanations,
+    fine-tunes LLaMA as shadow model to augment to 195M pairs
+  - CLAP engine: pre-trains assembly encoder (CLAP-ASM), then contrastive alignment
+    with text encoder using NL explanations
+  - <span class="warn">OUR ROLE</span>: Fine-tune clap-asm (HuggingFace: Hustcw/clap-asm) on eBPF-specific
+    token vocabulary. Their encoder was built for x86/ARM — we adapt it to eBPF.
+  - Key eBPF tokens to inject: MAP_LOOKUP, MAP_UPDATE, XDP_DROP, XDP_PASS,
+    XDP_REDIRECT, TC_ACT_OK, HELPER:bpf_redirect, HELPER:bpf_skb_store_bytes,
+    BPF_REG_CTX, packet field reads/writes (skb->protocol, xdp_md->data)
+
+<span class="keyword">PAPER 3 — Yaksha-Prashna</span> (IIT Hyderabad, Feb 2026, ResearchGate preprint)
+  - eBPF behavioral analysis: queries bytecode conformance to spec
+  - Uses dataflow analysis guided by CFG to extract: packet field ops,
+    map accesses, helper calls, XDP actions
+  - Has a Prolog-like DSL for expressing assertions and retrieval queries
+  - <span class="warn">OUR ROLE</span>: We provide richer embeddings for their similarity detection.
+    Our --task embed output should be a drop-in for their embedding module.
+  - Limitation we help with: YP doesn't handle semantic similarity across
+    different bytecode implementations of the same logical function
+
+<span class="comment">## THE FUSION ARCHITECTURE (core contribution)</span>
+
+<span class="highlight">Two-stream fusion</span> — this is what makes us novel:
+
+  Stream A (structural):
+    eBPF bytecode → FCFG extraction → linearize basic blocks
+    → inject eBPF domain tokens → fine-tuned CLAP-ASM encoder
+    → e_struct ∈ ℝ^d
+
+  Stream B (semantic):
+    eBPF bytecode → LLM API (Claude / GPT-4o)
+    → natural language summary of NF behavior
+    → sentence-transformers embed the summary
+    → e_sem ∈ ℝ^d
+
+  Fusion layer (cross-attention):
+    e_fused = CrossAttention(Q=e_struct, K=e_sem, V=e_sem)
+    The structural embedding queries the semantic embedding for context.
+    This grounds the LLM summary with structural precision.
+
+  <span class="warn">WHY THIS WORKS</span>:
+    - Structural alone fails: similar CFG topology ≠ similar semantics
+    - LLM alone fails: hallucinates on register-level / map access details
+    - Fused: summary fills semantic gaps, structure anchors hallucinations
+
+<span class="comment">## TECH STACK</span>
+
+<span class="keyword">Language</span>: Python 3.10+
+<span class="keyword">FCFG extraction</span>: rbpf (Rust eBPF VM, has Python bindings) OR
+                   llvm-objdump + custom parser (fallback)
+<span class="keyword">Structural encoder</span>: HuggingFace — Hustcw/clap-asm (already open source!)
+<span class="keyword">Text encoder</span>: sentence-transformers — all-MiniLM-L6-v2
+<span class="keyword">LLM teacher</span>: Anthropic API (claude-sonnet-4-20250514) for summary generation
+<span class="keyword">Fusion layer</span>: PyTorch — nn.MultiheadAttention (lightweight, 2-4 heads)
+<span class="keyword">Contrastive loss</span>: InfoNCE / NT-Xent
+<span class="keyword">Eval</span>: sklearn (ARI, NMI, cosine similarity), umap-learn, matplotlib
+<span class="keyword">Dataset</span>: Linux kernel samples/bpf/ + Cilium BPF programs + Katran
+<span class="keyword">Compute</span>: Google Colab T4 (free tier) — keep memory under 12GB
+<span class="keyword">CLI</span>: Click or argparse — simple, clean interface
+
+<span class="comment">## PROJECT STRUCTURE</span>
+
+<span class="value">ebpf_embed/
+├── extractor/
+│   ├── fcfg.py          # FCFG extraction from .o files
+│   ├── tokenizer.py     # eBPF-specific token injection
+│   └── serializer.py    # FCFG → linearized string for encoder
+├── encoder/
+│   ├── structural.py    # CLAP-ASM fine-tuning wrapper
+│   ├── semantic.py      # LLM summary + text embedding
+│   └── fusion.py        # Cross-attention fusion layer
+├── training/
+│   ├── dataset.py       # eBPF program dataset builder
+│   ├── train.py         # Contrastive training loop
+│   └── distill.py       # Teacher → student distillation
+├── tasks/
+│   ├── summary.py       # --task summary
+│   ├── similarity.py    # --task similarity
+│   └── embed.py         # --task embed (YP plug-in)
+├── eval/
+│   ├── metrics.py       # ARI, NMI, Retrieval@K
+│   └── visualize.py     # t-SNE / UMAP plots
+├── data/
+│   └── collect.py       # Scrape Linux kernel + Cilium programs
+└── cli.py               # Main entry point</span>
+
+<span class="comment">## DATASET PLAN</span>
+
+  Phase 1 (minimum viable — 2 days):
+    - Linux kernel: linux/samples/bpf/*.o — ~40 programs
+    - Cilium: github.com/cilium/cilium/bpf/ — ~30 programs
+    - Katran: github.com/facebookincubator/katran — ~10 programs
+    Total: ~80 eBPF functions minimum
+
+  Semantic labels for eval (manual, small effort):
+    - Group by function type: packet_filter, load_balancer, monitor,
+      firewall, nat, rate_limiter
+    - These become ground truth clusters for NMI/ARI eval
+
+  Phase 2 (if time allows):
+    - Compile custom eBPF programs to increase dataset size
+    - Use Yaksha-Prashna's own test suite programs
+
+<span class="comment">## WHAT THE TOOL OUTPUTS</span>
+
+<span class="keyword">--task summary:</span>
+  Input:  cilium_lb.o
+  Output: "This network function performs L4 load balancing over XDP.
+           It reads source IP and destination port from the packet header,
+           performs a lookup in the backend_map, and redirects matching
+           packets to a selected backend using bpf_redirect_map.
+           Drops packets with no matching backend entry."
+
+<span class="keyword">--task similarity:</span>
+  Input:  nf1.o nf2.o
+  Output: cosine_similarity: 0.87
+          conflict_detected: True
+          reason: "Both NFs write to sk_buff->mark field —
+                   likely dependency conflict in NF chain."
+
+<span class="keyword">--task embed:</span>
+  Input:  program.o
+  Output: numpy array shape (768,) — drop into YP pipeline
+
+<span class="comment">## EVALUATION PLAN</span>
+
+  Baselines to compare against:
+    1. node2vec on raw FCFG (random walk — Bin2Summary approach)
+    2. vanilla CLAP-ASM (no eBPF token adaptation)
+    3. LLM summary embedding only (no structural stream)
+    4. <span class="highlight">Ours: fusion of structural + semantic</span>
+
+  Metrics:
+    - Clustering: ARI, NMI on semantic label groups
+    - Retrieval: top-1 / top-3 accuracy (find most similar NF)
+    - Downstream: plug into YP — does query match accuracy improve?
+
+  The ablation table is the paper contribution:
+    node2vec < vanilla CLAP < LLM-only < fusion (ours)
+
+<span class="comment">## CONSTRAINTS AND RULES FOR VIBE CODING</span>
+
+<span class="warn">HARD CONSTRAINTS:</span>
+  - Must run on Google Colab T4 (12GB VRAM) — no 70B models locally
+  - No fine-tuning CLAP from scratch — use Hustcw/clap-asm checkpoint
+  - Keep the LLM API calls batched — cost control matters
+  - Every module must be independently testable with a single .o file
+
+<span class="warn">CODING STYLE:</span>
+  - Move fast, write working code first, refactor second
+  - Use type hints everywhere
+  - Every function gets a one-line docstring minimum
+  - Print progress — this is a research tool, verbose is fine
+  - Save intermediate outputs (embeddings, summaries) to disk —
+    we can't afford to rerun LLM API calls
+
+<span class="warn">WHEN YOU HIT A WALL:</span>
+  - If rbpf doesn't work for FCFG extraction, fall back to
+    llvm-objdump + manual CFG parsing — tell me before you try
+  - If CLAP-ASM tokenizer surgery is too complex, simplify:
+    use summary-only embeddings first, add structural stream second
+  - If cross-attention fusion is too heavy for Colab,
+    fall back to gated concatenation — simpler, still novel
+
+<span class="comment">## FIRST THING TO BUILD</span>
+
+Start with <span class="highlight">extractor/fcfg.py</span>.
+
+Write a function that:
+  1. Takes a path to an eBPF .o file
+  2. Uses llvm-objdump (or rbpf) to disassemble it
+  3. Parses basic blocks from the disassembly output
+  4. Builds a networkx DiGraph representing the FCFG
+  5. Tags each basic block with eBPF-specific tokens:
+     - detect map operations: bpf_map_lookup_elem, bpf_map_update_elem
+     - detect helper calls: bpf_redirect, bpf_skb_store_bytes, etc.
+     - detect XDP return codes: XDP_DROP, XDP_PASS, XDP_REDIRECT
+     - detect packet field accesses (load/store on r1 context pointer)
+  6. Serializes the tagged FCFG to a flat string:
+     [BB0] r1=*(u32*)(r1+0) MAP_LOOKUP r0=0 if r0==0 goto BB2
+     [BB1] XDP_REDIRECT ...
+     [BB2] XDP_DROP
+
+Test it on: linux/samples/bpf/xdp_drop_kern.o (simplest XDP program)
+Show me the FCFG graph and the serialized string output.
+Then we move to the encoder.
+
+<span class="comment">## LET'S GO</span>
+
+<span class="highlight">We are building eBPF-Embed. Start with extractor/fcfg.py.
+Ask me if you need the actual .o file or if I should point
+you to the Linux kernel samples repo. Let's ship.</span>
+    </div>
+  </div>
+
+  <div class="glow-line"></div>
+
+  <!-- Usage notes -->
+  <div class="section">
+    <div class="section-label">
+      <span class="section-num">02</span>
+      <span class="section-title">how to use this prompt</span>
+    </div>
+
+    <div class="card purple">
+      <div class="card-title">paste order</div>
+      <ul>
+        <li>Open a fresh Claude conversation</li>
+        <li>Paste the entire prompt above as your first message</li>
+        <li>Claude will start with <code>extractor/fcfg.py</code> — that's intentional</li>
+        <li>Once FCFG extraction works, say <em>"now build encoder/structural.py"</em></li>
+        <li>Build module by module — each one is independently testable</li>
+      </ul>
+    </div>
+
+    <div class="card teal">
+      <div class="card-title">day-by-day build order</div>
+      <ul>
+        <li><strong>Day 1</strong> — extractor/ + data/collect.py + LLM teacher calls (get your dataset)</li>
+        <li><strong>Day 2</strong> — encoder/structural.py + encoder/semantic.py + encoder/fusion.py</li>
+        <li><strong>Day 3</strong> — training/ + eval/ + tasks/ + cli.py + write the paper section</li>
+      </ul>
+    </div>
+
+    <div class="card amber">
+      <div class="card-title">if things break</div>
+      <ul>
+        <li>FCFG extraction fails → fall back to llvm-objdump, tell Claude explicitly</li>
+        <li>CLAP tokenizer too complex → skip structural stream, use summary-only first</li>
+        <li>Colab OOM → reduce batch size, use gradient checkpointing</li>
+        <li>Dataset too small → generate synthetic variants (recompile with different flags)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="glow-line"></div>
+
+  <!-- Research contribution summary -->
+  <div class="section">
+    <div class="section-label">
+      <span class="section-num">03</span>
+      <span class="section-title">what makes this publishable</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+      <div class="card teal">
+        <div class="card-title">contribution 1</div>
+        <p>First eBPF-specific tokenizer for assembly encoders. eBPF tokens as first-class semantic units, not x86 mnemonics.</p>
+      </div>
+      <div class="card purple">
+        <div class="card-title">contribution 2</div>
+        <p>Summary-structure fusion via cross-attention. Structural embedding attends to semantic summary — novel for bytecode domain.</p>
+      </div>
+      <div class="card amber">
+        <div class="card-title">contribution 3</div>
+        <p>Teacher-student distillation: GPT-4o knowledge compressed into lightweight student encoder deployable in YP pipeline.</p>
+      </div>
+      <div class="card coral">
+        <div class="card-title">contribution 4</div>
+        <p>Real downstream eval: plug into Yaksha-Prashna and show improvement on behavioral query matching. Not just clustering.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>eBPF-Embed · IIT Hyderabad · 2026</span>
+    <span>Yaksha-Prashna complement · bin2summary + CLAP inspired</span>
+  </div>
+
+</div>
+
+<script>
+function copyPrompt() {
+  const block = document.getElementById('main-prompt');
+  const btn = block.querySelector('.copy-btn');
+
+  // Get text content without the button text
+  const clone = block.cloneNode(true);
+  clone.querySelector('.copy-btn').remove();
+  const text = clone.innerText || clone.textContent;
+
+  navigator.clipboard.writeText(text.trim()).then(() => {
+    btn.textContent = 'copied!';
+    btn.style.background = 'var(--teal)';
+    btn.style.borderColor = 'var(--teal)';
+    btn.style.color = '#000';
+    setTimeout(() => {
+      btn.textContent = 'copy';
+      btn.style.background = 'var(--purple-dim)';
+      btn.style.borderColor = 'var(--purple)';
+      btn.style.color = 'var(--purple)';
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>

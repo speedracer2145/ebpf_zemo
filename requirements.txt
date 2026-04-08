@@ -1,0 +1,12 @@
+networkx
+pyelftools
+matplotlib
+requests
+ollama
+sentence-transformers
+torch
+numpy
+scikit-learn
+umap-learn
+click
+pyyaml
