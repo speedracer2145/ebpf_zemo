@@ -1,3 +1,23 @@
+Metadata-Version: 2.4
+Name: ebpf-zemo
+Version: 0.1.0
+Summary: Semantic Embedding Engine for eBPF Bytecode
+Author-email: Alok <alok@example.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+Requires-Dist: pyelftools
+Requires-Dist: matplotlib
+Requires-Dist: requests
+Requires-Dist: ollama
+Requires-Dist: sentence-transformers
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: umap-learn
+Requires-Dist: click
+Requires-Dist: pyyaml
+
 # eBPF-Zemo: Semantic Embedding Engine for eBPF Bytecode
 
 eBPF-Zemo (or eBPF-Embed) is a research-grade tool designed to generate high-dimensional embeddings from eBPF object files. By combining structural analysis of bytecode with LLM-powered semantic summaries, it captures both the logical flow and the high-level intent of eBPF programs.
@@ -55,20 +75,20 @@ python -m ebpf_embed.data.generate_summaries
 ```
 
 ### 2. Generate Embeddings
-Generate a 512-dim fused embedding for a specific eBPF object file. You can use the full path, a partial path, or just the filename:
+Generate a 512-dim fused embedding for a specific eBPF object file:
 ```bash
-zemo embed bloom_filter_map.o
+zemo embed data/your_program.o
 ```
 
 ### 3. Compare Programs
 Calculate the cosine similarity between two eBPF programs:
 ```bash
-zemo similarity xdp_bpf_bpfel.o tcx_bpf_bpfel.o
+zemo similarity data/prog1.o data/prog2.o
 ```
 
 ### 4. View Cached Summaries
 ```bash
-zemo summary fexit_sleep.o
+zemo summary data/your_program.o
 ```
 
 ## 📁 Project Structure

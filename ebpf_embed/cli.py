@@ -45,15 +45,45 @@ class EBPFEmbedder:
         
         return e_fused
 
+def resolve_path(file_path):
+    """Smartly resolves a file path, checking locally and then in the package data directory."""
+    # 1. Check if it exists as is
+    if os.path.exists(file_path):
+        return file_path
+    
+    # 2. Check if it exists in the package's data directory
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(base_dir, "ebpf_embed", "data")
+    
+    # Try just the filename if a path was provided
+    filename = os.path.basename(file_path)
+    combined_path = os.path.join(data_dir, filename)
+    
+    if os.path.exists(combined_path):
+        return combined_path
+        
+    # 3. If still not found, check if 'data/filename' was provided and strip 'data/'
+    if file_path.startswith("data/"):
+        stripped_path = os.path.join(data_dir, file_path[5:])
+        if os.path.exists(stripped_path):
+            return stripped_path
+
+    # If really not found, raise a helpful error
+    available = [f for f in os.listdir(data_dir) if f.endswith(".o")]
+    error_msg = f"Path '{file_path}' does not exist and was not found in the data directory.\n"
+    error_msg += f"Available programs: {', '.join(available)}"
+    raise click.BadParameter(error_msg)
+
 @click.group()
 def main():
     """eBPF-Embed: Semantic Bytecode Embedding Engine"""
     pass
 
 @main.command()
-@click.argument('file_path', type=click.Path(exists=True))
+@click.argument('file_path')
 def embed(file_path):
     """Generate a 512-dim fused embedding for an eBPF object."""
+    file_path = resolve_path(file_path)
     embedder = EBPFEmbedder()
     emb = embedder.get_embedding(file_path)
     click.echo(f"Embedding generated for {os.path.basename(file_path)}")
@@ -61,10 +91,12 @@ def embed(file_path):
     click.echo(f"Dimension: {emb.shape[1]}")
 
 @main.command()
-@click.argument('file1', type=click.Path(exists=True))
-@click.argument('file2', type=click.Path(exists=True))
+@click.argument('file1')
+@click.argument('file2')
 def similarity(file1, file2):
     """Calculate cosine similarity between two eBPF objects."""
+    file1 = resolve_path(file1)
+    file2 = resolve_path(file2)
     embedder = EBPFEmbedder()
     emb1 = embedder.get_embedding(file1)
     emb2 = embedder.get_embedding(file2)
@@ -73,10 +105,13 @@ def similarity(file1, file2):
     click.echo(f"Similarity between {os.path.basename(file1)} and {os.path.basename(file2)}: {sim.item():.4f}")
 
 @main.command()
-@click.argument('file_path', type=click.Path(exists=True))
+@click.argument('file_path')
 def summary(file_path):
     """Show the cached semantic summary for an eBPF object."""
-    summaries_path = "ebpf_embed/data/summaries.json"
+    file_path = resolve_path(file_path)
+    # Ensure we find the summaries file regardless of where the command is run from
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    summaries_path = os.path.join(base_dir, "ebpf_embed", "data", "summaries.json")
     filename = os.path.basename(file_path)
     
     if os.path.exists(summaries_path):

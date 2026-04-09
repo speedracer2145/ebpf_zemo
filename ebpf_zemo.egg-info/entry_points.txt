@@ -1,0 +1,2 @@
+[console_scripts]
+zemo = ebpf_embed.cli:main

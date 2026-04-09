@@ -10,12 +10,34 @@ class DataCollector:
         # Repositories and specific files to pull
         self.SOURCES = {
             "vbpf/ebpf-samples": [
+                # Existing cilium-examples
                 "cilium-examples/xdp_bpf_bpfel.o",
                 "cilium-examples/kprobe_bpf_bpfel.o",
                 "cilium-examples/fentry_bpf_bpfel.o",
-                "cilium-examples/uprobe_bpf_bpfel.o"
-            ],
-            # We can add more sources here
+                "cilium-examples/tcx_bpf_bpfel.o",
+                "cilium-examples/cgroup_skb_bpf_bpfel.o",
+                "cilium-examples/tracepoint_in_c_bpf_bpfel.o",
+                "cilium-examples/ringbuffer_bpf_bpfel.o",
+                # Linux Selftests
+                "linux-selftests/fexit_sleep.o",
+                "linux-selftests/bpf_cubic.o",
+                "linux-selftests/bloom_filter_map.o",
+                # Advanced Network Functions
+                "katran/xdp_root.o",
+                "falco/probe.o",
+                "suricata/filter.o",
+                "suricata/lb.o",
+                "suricata/xdp_filter.o",
+                "suricata/vlan_filter.o",
+                "ovs/datapath.o",
+                "cilium-core/bpf_host.o",
+                "cilium-core/bpf_lxc.o",
+                "cilium-core/bpf_network.o",
+                "cilium-core/bpf_overlay.o",
+                "cilium-core/bpf_xdp.o",
+                "cilium-core/bpf_wireguard.o",
+                "cilium-core/bpf_sock.o"
+            ]
         }
 
     def download_file(self, repo, path):
