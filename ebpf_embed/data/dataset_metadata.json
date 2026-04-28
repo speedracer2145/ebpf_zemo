@@ -1,0 +1,1052 @@
+{
+    "tracex1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex1_kern.o",
+        "sha256_hash": "1d7509b9a0e57f503d9b42e8696d0d1663305beb2cab7e72eeeeef27e4a1ff23"
+    },
+    "tracex3_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex3_kern.o",
+        "sha256_hash": "5e8e1b16419fc672eb93cb2d9ee7e1d0535de45cceffc1d23a0e8a02afdf490b"
+    },
+    "tracex7_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex7_kern.o",
+        "sha256_hash": "1a8a9a3977b175c86530a9409a25adb5796c8263c04b3e9daa3764b4449c294e"
+    },
+    "sockex3_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "new_linux/sockex3_kern.o",
+        "sha256_hash": "9cbc74e86ba4627d500e5bbdc47b5ca281555a9ecacb60c34bcd58275845b583"
+    },
+    "sockex1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "new_linux/sockex1_kern.o",
+        "sha256_hash": "789f440a275ad1235909f9ce9935ce9131d4385bcb3b52c04101d1957e4d258a"
+    },
+    "tracex2_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex2_kern.o",
+        "sha256_hash": "b9300528ce3de3095fa0ce21e5471c5c5e180dbbdda37ea75c21a9965d84bbb8"
+    },
+    "sockex2_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "new_linux/sockex2_kern.o",
+        "sha256_hash": "ff5232ab446371ad1d293947b3c92adcfc1115b63f3e2227377c563f7f4b97eb"
+    },
+    "tracex6_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex6_kern.o",
+        "sha256_hash": "ca645820d631f761667d896db4c0b7593fa14ee348cebfc50504509152845c2a"
+    },
+    "trace_output_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/trace_output_kern.o",
+        "sha256_hash": "2c16d59a5f235ab3f9b32cebd026b27689f1cd791f6c28b138a2163c02737b42"
+    },
+    "tracex4_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "new_linux/tracex4_kern.o",
+        "sha256_hash": "7cc00def321b5429d6068866688dce5849b44c1615cf2a6ab369432bcfc52d13"
+    },
+    "sock_flags_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "new_linux/sock_flags_kern.o",
+        "sha256_hash": "ddf6ab8c51900e5b74d5cc5d5e168131cb498326cf25f59207727f97a188b9ae"
+    },
+    "bpf_dctcp.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux-selftests/bpf_dctcp.o",
+        "sha256_hash": "0c70b0f70de2c0f8351c8c4381000691793b3fe8a7d12f09f7e8addf9244bb9f"
+    },
+    "socket_cookie_prog.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux-selftests/socket_cookie_prog.o",
+        "sha256_hash": "a83fe7647d1f2f11c51c1c64819f53bd1558f5cbd4f035dc90c20d73c9848d8a"
+    },
+    "sockmap_parse_prog.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux-selftests/sockmap_parse_prog.o",
+        "sha256_hash": "ba5b4f8c0555caf88002093720c7a26259aa9c2542fc5cee8c41a07856ba24ef"
+    },
+    "sockmap_verdict_prog.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux-selftests/sockmap_verdict_prog.o",
+        "sha256_hash": "1d6dce1c1123c4913cb9946855aa74c067818b5840ff7da34125c41a82caef76"
+    },
+    "kfree_skb.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux-selftests/kfree_skb.o",
+        "sha256_hash": "c0773877d37892f934096d30d268813815e786859e65e65c120f38646da812bd"
+    },
+    "bypass_filter.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Network Security (Suricata)",
+        "program_type": "Other eBPF",
+        "original_path": "suricata/bypass_filter.o",
+        "sha256_hash": "2b8e10f3e97a0e2e4287c6d0affaafa3f01c7b638828d8f79730c9353255dc86"
+    },
+    "kprobe_percpu_bpf_bpfel.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Kprobe",
+        "original_path": "cilium-examples/kprobe_percpu_bpf_bpfel.o",
+        "sha256_hash": "5e36c94e4241900b957e657407bf015b6be0b7369bdbb1a495decede08c04059"
+    },
+    "uretprobe_bpf_x86_bpfel.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Other eBPF",
+        "original_path": "cilium-examples/uretprobe_bpf_x86_bpfel.o",
+        "sha256_hash": "c0d95fd7932aae570e0c23d8a30e2a6d365397a6dae0cc582748dbff236fb087"
+    },
+    "kprobepin_bpf_bpfel.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Kprobe",
+        "original_path": "cilium-examples/kprobepin_bpf_bpfel.o",
+        "sha256_hash": "a73010a21b793eb90d225ad6eeb79bd426ad7772b82cdcc233db36539216d351"
+    },
+    "tcprtt_sockops_bpf_bpfel.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "TC Hook",
+        "original_path": "cilium-examples/tcprtt_sockops_bpf_bpfel.o",
+        "sha256_hash": "3b93dbcc976810a7a0273fdf0569ee4ea56d8c134b0cda077e75f3cb5b36b0ca"
+    },
+    "tcprtt_bpf_bpfel.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "TC Hook",
+        "original_path": "cilium-examples/tcprtt_bpf_bpfel.o",
+        "sha256_hash": "2dd4384c3e7a7ce9eb537453edb16b2b212ed53ee993dcc4c25a7003595928ea"
+    },
+    "xdp_ddos01_blacklist_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_ddos01_blacklist_kern.o",
+        "sha256_hash": "25625c46030b67cc7149832aafc6c1953f590bbf25750705f4924a30e52edb6d"
+    },
+    "xdp_redirect_cpu_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_redirect_cpu_kern.o",
+        "sha256_hash": "b35c7464d477c7aca692dc3b5d935a562acd088a99364a06bcd108ac805e3e10"
+    },
+    "xdp_redirect_err_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_redirect_err_kern.o",
+        "sha256_hash": "e73ce9a3d4b83e0a18f35ddd59cb961c00f35268576c222bc4f7114db388f35a"
+    },
+    "xdp_bench02_drop_pattern_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_bench02_drop_pattern_kern.o",
+        "sha256_hash": "04cbff7386f955a2d76e03fde91646c92a527d018bdfd65e692d1a0540c53a3d"
+    },
+    "napi_monitor_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "prototype-kernel/napi_monitor_kern.o",
+        "sha256_hash": "2e679893c3834fc1878766925bd02fb4cd5124e19bf4e181422249474abd614f"
+    },
+    "xdp_monitor_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_monitor_kern.o",
+        "sha256_hash": "7545ba35a35eca756e91950c6be4c9e87bbe139a77380257347d1717f784c4da"
+    },
+    "tc_bench01_redirect_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "TC Hook",
+        "original_path": "prototype-kernel/tc_bench01_redirect_kern.o",
+        "sha256_hash": "99d01288d32b248d82f0207144809b89d99ae790cf536a1588a50016d24f4049"
+    },
+    "xdp_ttl_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_ttl_kern.o",
+        "sha256_hash": "ebea4c334409c37c38c92a8d6cc4c2f6ad9d60feac7e88f7b97db664294510f3"
+    },
+    "xdp_tcpdump_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_tcpdump_kern.o",
+        "sha256_hash": "bdb1f39f57e5af740d213c095a194a652d872e731bc5cf971a145d9686a19919"
+    },
+    "xdp_bench01_mem_access_cost_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_bench01_mem_access_cost_kern.o",
+        "sha256_hash": "9acf7cf89f3d74c6612c097815b2a3f90a09c25352e628b92cff87d3f020e826"
+    },
+    "xdp_vlan01_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "XDP Hook",
+        "original_path": "prototype-kernel/xdp_vlan01_kern.o",
+        "sha256_hash": "b679dbb4e6615b66c96a692cdd1eb0e804b60482cf74fbf1caf95259ed29b5d5"
+    },
+    "usdt.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/usdt.bpf.o",
+        "sha256_hash": "06fdd17f3be32c14a07ab47d84497e54531c50d0f63e9337dcb07ced266b09ed"
+    },
+    "lsm.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/lsm.bpf.o",
+        "sha256_hash": "23fea6a101eef53f74fd7b2799bc8a3afaf47847cad643c517dd454034393a8e"
+    },
+    "ksyscall.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/ksyscall.bpf.o",
+        "sha256_hash": "f103bae74ff21294984f24f173544cc6c43f3b62d47de4e61583f507cf6962c6"
+    },
+    "tc.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "TC Hook",
+        "original_path": "libbpf-bootstrap/tc.bpf.o",
+        "sha256_hash": "602c6870bfad1a8759aabff64cdd968d5971dadebc07ca620d4b9d411cdb49a7"
+    },
+    "profile.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/profile.bpf.o",
+        "sha256_hash": "836a9ade3e142e997e660c9c146feddfcdd38d5991ce023b7cc95c4297e62670"
+    },
+    "uprobe.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/uprobe.bpf.o",
+        "sha256_hash": "b4cac56bc366d8cb363862a635da1563be941bb9e44c24ce2925f772f62d454e"
+    },
+    "fentry.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/fentry.bpf.o",
+        "sha256_hash": "f5042d429420087f923490eb144bf841705d31d56d46f7abbc13c4f293956fa9"
+    },
+    "kprobe.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Kprobe",
+        "original_path": "libbpf-bootstrap/kprobe.bpf.o",
+        "sha256_hash": "f212b7156f4c840d57765bff668eb9944c6eca73c91e67197a684b8aa1ab7aa2"
+    },
+    "sockfilter.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Socket/Networking",
+        "original_path": "libbpf-bootstrap/sockfilter.bpf.o",
+        "sha256_hash": "cdf3b284bab8004bd2d097ec814b275b6bd808655de5d3613ce3194310ef2bf2"
+    },
+    "task_iter.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "libbpf-bootstrap/task_iter.bpf.o",
+        "sha256_hash": "9bf7e49cc64db7fe9f15395092720e22e894ec29eb0b56b065c83fd992c44dc8"
+    },
+    "xdpsock_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdpsock_kern.o",
+        "sha256_hash": "aa3358eb0a5d196fc82755c788c21debc4d6e08473b5fd7cbb70cf7986aa8863"
+    },
+    "tcp_basertt_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_basertt_kern.o",
+        "sha256_hash": "5c02361c98675a9d305bab51fe41a699e7e8246628f7e50231868e2657b9234e"
+    },
+    "tcp_rwnd_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_rwnd_kern.o",
+        "sha256_hash": "eecc221a848fbfbdb6740134492c90392c81e008667c45f235e0f449856de0aa"
+    },
+    "map_perf_test_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/map_perf_test_kern.o",
+        "sha256_hash": "ef0f716e018fea420d05847817734ed0faad36fd1a70206a386479ec0e3325ae"
+    },
+    "ebpf-samples_1_tracex1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex1_kern.o",
+        "sha256_hash": "feff71e3a7ac801dfeefb2e2624e3fb46ca74e58ca69d23ca4770214616c708f"
+    },
+    "syscall_tp_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/syscall_tp_kern.o",
+        "sha256_hash": "53994510177f3f8b52127e6d69215074dac1b5e62775eb1a50c6da22d6ea1445"
+    },
+    "tc_l2_redirect_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tc_l2_redirect_kern.o",
+        "sha256_hash": "7899f4e335b55a047a92c284c776823920cf000653b5fb59c09c2dfa27333b3d"
+    },
+    "test_cgrp2_tc_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/test_cgrp2_tc_kern.o",
+        "sha256_hash": "c531fcdcf7112fd1bed1d08f9be94295bf8acc88f174626b6f3524bd0f9e03ab"
+    },
+    "xdp2skb_meta_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp2skb_meta_kern.o",
+        "sha256_hash": "38ee6f83971a402b8e3aa4f89fd85e66895df08e03c3efdb150e463dca3b1be5"
+    },
+    "xdp_tx_iptunnel_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_tx_iptunnel_kern.o",
+        "sha256_hash": "f6db4e9138394ce291fa24af3051fc399acafb8a4f3c140e7726287872c2008d"
+    },
+    "tcp_clamp_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_clamp_kern.o",
+        "sha256_hash": "68f28947e4ae66f5f73a28a7db5e252b15933cd1bb8455d082ffffa1f681c5a8"
+    },
+    "ebpf-samples_1_tracex3_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex3_kern.o",
+        "sha256_hash": "8bd531a40f790ea6dff3f006a345ec8a093384841c17d81c2f7741591b24ff04"
+    },
+    "test_current_task_under_cgroup_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/test_current_task_under_cgroup_kern.o",
+        "sha256_hash": "e0bec551294bb1ea7d08efabf3622b646ea6662137aa3b8e1b1e51223f12827f"
+    },
+    "ebpf-samples_1_tracex7_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex7_kern.o",
+        "sha256_hash": "41b2e8b9e4ccc4ae1ac42ca1c1cac34a52f7b1726681e617d7e1ef14df523490"
+    },
+    "ebpf-samples_1_xdp_redirect_cpu_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_redirect_cpu_kern.o",
+        "sha256_hash": "8941d3530df23d2788aa203e558c22b7ec45d07df06546fa03407394d7b63410"
+    },
+    "tcp_cong_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_cong_kern.o",
+        "sha256_hash": "00224f8172a5d3083722c997c5360e672873d07d7d664abf6063ce70c0d28033"
+    },
+    "ebpf-samples_1_sockex3_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux/sockex3_kern.o",
+        "sha256_hash": "f01ec8d0b49a7d8d6e2691faeb292082be1569b156e1a37d436be9f9130360a1"
+    },
+    "test_probe_write_user_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/test_probe_write_user_kern.o",
+        "sha256_hash": "f33497e084082cedc52d6d3d6b7769e900b076eed4c291d41aec3354fc41ceba"
+    },
+    "lathist_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/lathist_kern.o",
+        "sha256_hash": "e2bb210ca00bf6252de4cd53f703b122c7dddc04a22bda82a52a543f25cdf369"
+    },
+    "ebpf-samples_1_sockex1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux/sockex1_kern.o",
+        "sha256_hash": "596faef1ac7f67e72740395b1713a5ceedd87c59d680241f5533af83a90a38f5"
+    },
+    "test_overhead_raw_tp_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/test_overhead_raw_tp_kern.o",
+        "sha256_hash": "c4cdcf3a07c5dff35eaea51803ad16268405136230eabfc39b3517bec2633d82"
+    },
+    "tracex5_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex5_kern.o",
+        "sha256_hash": "bd9b004eb641eb1252b3cd3316273a2458d3d657d871746691c5f3be859074c3"
+    },
+    "cpustat_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/cpustat_kern.o",
+        "sha256_hash": "73c3a461033d911898457c6309235fbb6f7dc6d3bd4cb459f84db60dbb1174ad"
+    },
+    "xdp1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp1_kern.o",
+        "sha256_hash": "94eacd470a29498523d430e7ed90a17b025cea4b01508726eeedaa2f1f9ac76f"
+    },
+    "xdp_router_ipv4_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_router_ipv4_kern.o",
+        "sha256_hash": "0a2dd0b0ccf5a981193614e6f06853fee6eb149c8010b986651e44f393e29197"
+    },
+    "xdp_rxq_info_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_rxq_info_kern.o",
+        "sha256_hash": "deb228103b45bd371f392470849eb2176ba13be3894afd426b553a9d9cad737b"
+    },
+    "trace_event_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/trace_event_kern.o",
+        "sha256_hash": "9333f56b0558c8fbb21d9604f4a324fff19b7d0e49e9a4522e4d82cba0da89a3"
+    },
+    "lwt_len_hist_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/lwt_len_hist_kern.o",
+        "sha256_hash": "3bdc6ded3822a006208480b0d517a25181d4c0ee618ebe20272f220079945e45"
+    },
+    "tcbpf1_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcbpf1_kern.o",
+        "sha256_hash": "3450782b2954c554f657839abf54af2507f8e53f74cde9a4256355e5cbe87197"
+    },
+    "tcp_synrto_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_synrto_kern.o",
+        "sha256_hash": "14230d14d972d2fb9bd788b029c5c6760eddbdab026cc6cb517f3d021c69ce9f"
+    },
+    "test_overhead_tp_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/test_overhead_tp_kern.o",
+        "sha256_hash": "54e2c0c26f978b9836177677e41d06020560e16b18ade0dd46ca0ee4bcd230a9"
+    },
+    "xdp_sample_pkts_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_sample_pkts_kern.o",
+        "sha256_hash": "210e89fc6fda090e7bb4812328e227e6effbc311ba2c250441ec152129cfe98c"
+    },
+    "task_fd_query_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/task_fd_query_kern.o",
+        "sha256_hash": "29552973aa74ff881c96bd7142053bd6b7972f56de284f17aef7ff1eef11c0be"
+    },
+    "xdp_adjust_tail_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_adjust_tail_kern.o",
+        "sha256_hash": "9239829f3626711b696db3bcf6c8c9e2ecacaa183598dfbe6024d0dc43f026a2"
+    },
+    "xdp_fwd_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_fwd_kern.o",
+        "sha256_hash": "7cb03bfd9b2044dca70fa92a7dfac5b1f872f27d4b0f3b3487a0781e09eca102"
+    },
+    "ebpf-samples_1_xdp_monitor_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_monitor_kern.o",
+        "sha256_hash": "2edcd7852cf6f08daa51adca9660f535575cdc7fddb9e4bb1166a94550b22252"
+    },
+    "ebpf-samples_1_tracex2_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex2_kern.o",
+        "sha256_hash": "89e701b7fc29cf5e4c8954df6c8880e4d184e7aaea45473176b94facdb2e215d"
+    },
+    "xdp_redirect_map_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_redirect_map_kern.o",
+        "sha256_hash": "17e962d2c550b3b45f1b632a4ceae6b58b7ffab21e1993919938a840bf82aaa0"
+    },
+    "test_map_in_map_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/test_map_in_map_kern.o",
+        "sha256_hash": "17eb52ecfe1fdaea0d2e54eb36dedec999266a6757e4925b12f4a3e64a0d4f01"
+    },
+    "ebpf-samples_1_sockex2_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux/sockex2_kern.o",
+        "sha256_hash": "29f756bc600d9f579381a4b6388c1c676d012354e2c094bc748d1638e74ae433"
+    },
+    "tcp_bufs_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_bufs_kern.o",
+        "sha256_hash": "c6876f1254d7e3c62b430e904122f83e0d44e087f135dee7875b35dff4a719ce"
+    },
+    "offwaketime_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/offwaketime_kern.o",
+        "sha256_hash": "0229a2f98c860115b27b48cc53a48e97f6baee813c101df80f85ffe939f7218b"
+    },
+    "tcp_iw_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "TC Hook",
+        "original_path": "linux/tcp_iw_kern.o",
+        "sha256_hash": "931f2dc89558a1b553364ec1eea326701fb81fb9fa7bd1cf8704927e0be6c073"
+    },
+    "xdp2_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp2_kern.o",
+        "sha256_hash": "cb48071243ebfe887a3a2adf849530828f397ef04b4ce875ac91f1255d89ef7c"
+    },
+    "ebpf-samples_1_tracex6_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex6_kern.o",
+        "sha256_hash": "80ca38897e84fa8e0cbb3a107604f257da0dea2067a0bfec923885f559ff3877"
+    },
+    "test_overhead_kprobe_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Kprobe",
+        "original_path": "linux/test_overhead_kprobe_kern.o",
+        "sha256_hash": "2dd5d80002a219fde01d52e87ce178f4bc655e818f5840df648e2341e8b039a5"
+    },
+    "sampleip_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Other eBPF",
+        "original_path": "linux/sampleip_kern.o",
+        "sha256_hash": "5ea69779f585139ec806dd91c6c918666d37262cdc8b69630fbf58aff0cbc6d1"
+    },
+    "ebpf-samples_1_trace_output_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/trace_output_kern.o",
+        "sha256_hash": "c3434446919c2c1bc3f1828373f437f9fa729527d3ec53d6c2187eab4dbe0111"
+    },
+    "ebpf-samples_1_tracex4_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Tracepoint",
+        "original_path": "linux/tracex4_kern.o",
+        "sha256_hash": "c913159c3672b4822bb73f11a204c762cf47fa90a68c1fe0988180e0fc5af0be"
+    },
+    "ebpf-samples_1_sock_flags_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "Socket/Networking",
+        "original_path": "linux/sock_flags_kern.o",
+        "sha256_hash": "28f2c26e2f96243ac21d5e7a8bc30bcf1d5181100ced8c80684b64d169ea67d2"
+    },
+    "xdp_redirect_kern.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Linux Kernel Testing",
+        "program_type": "XDP Hook",
+        "original_path": "linux/xdp_redirect_kern.o",
+        "sha256_hash": "be8215f87e051024a5a91e220171c64a38fa80a9e061586aaa891575626915be"
+    },
+    "exitsnoop.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Performance Tracing (BCC)",
+        "program_type": "Other eBPF",
+        "original_path": "bcc/exitsnoop.bpf.o",
+        "sha256_hash": "97efc22354c303c1237ca361ad043d4e748b9a07f054f80ba200a9a00b598159"
+    },
+    "tcpconnect.bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Performance Tracing (BCC)",
+        "program_type": "TC Hook",
+        "original_path": "bcc/tcpconnect.bpf.o",
+        "sha256_hash": "979bbc108b54eef8018264471f9a86ff96bd7ad562240664c11d9055243ecb57"
+    },
+    "packet_overflow.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/packet_overflow.o",
+        "sha256_hash": "cbdd997e1023a9132c38b9176202a092bb13001b53cee9146cd26fedea94eee0"
+    },
+    "hash_of_maps.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/hash_of_maps.o",
+        "sha256_hash": "2aed792ce49d0f85e449fc857954db8a5702e6e3ca4d7826be9441db73ce37e6"
+    },
+    "packet_reallocate.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/packet_reallocate.o",
+        "sha256_hash": "4089ff1132de5c6d72875be496a1e9ec0a60a52c0c6b3f58989d229d9fd3ff74"
+    },
+    "wronghelper.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/wronghelper.o",
+        "sha256_hash": "a339b3ef8f5cf36a7213cd1a0c0d9de3f64f3639fe4b7b948fd0958c17512c84"
+    },
+    "map_in_map_anonymous.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/map_in_map_anonymous.o",
+        "sha256_hash": "614670bd8e4a2cc510cde45769ff3091062c71b52f183698d7130d468a1085a5"
+    },
+    "externalfunction.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/externalfunction.o",
+        "sha256_hash": "515fb1f1ed590ade89625f13e03efbb5944e6809fe08422eb0681a5ea687bed8"
+    },
+    "lpm_trie.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/lpm_trie.o",
+        "sha256_hash": "33c39fa6f370705c9fc742b447b4950c8d74ab21ab9612580c730f94c23fbb14"
+    },
+    "global_variable.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/global_variable.o",
+        "sha256_hash": "c382b18eb6e59f891735c12e1b0bd21cd89e7e9c4e6f6bca5c8f764c70017109"
+    },
+    "packet_access.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/packet_access.o",
+        "sha256_hash": "b460305002b24ed991ad2e9c155e7c5876d454c277ae7d9c66fede15f907903f"
+    },
+    "mapunderflow.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/mapunderflow.o",
+        "sha256_hash": "988b52b800005556be458e92f180ee826cf998969e8efe43967fb5fa5538f0d8"
+    },
+    "mapvalue-overrun.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/mapvalue-overrun.o",
+        "sha256_hash": "d6a40b62aa87b445c6743af2bb827e147855c71e837fa9522c74e386aac2d8fb"
+    },
+    "correlated_branch2.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/correlated_branch2.o",
+        "sha256_hash": "14d60b2157920f04af51ee68a5b11725a690fd27bb826cd88f4809ff3f37403a"
+    },
+    "tail_call.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/tail_call.o",
+        "sha256_hash": "e572f320102ac20bc1bde5026af21338b6561491f939f3d9e43161a45c1e5206"
+    },
+    "ringbuf_in_map.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/ringbuf_in_map.o",
+        "sha256_hash": "d6fe32726b87bd0d5134b671a80add86aab84c415104817cc36f046c6c515d3a"
+    },
+    "cpumap.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/cpumap.o",
+        "sha256_hash": "309e6d7e1f30fe59e8d9623ab6b223f942bbc4b18b9e09268ba3cb341cd85c3e"
+    },
+    "perf_event_array.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/perf_event_array.o",
+        "sha256_hash": "9202fc3a837445b4d245e705d84c75063588362923b83c7691edf637836e09d3"
+    },
+    "map_in_map_legacy.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/map_in_map_legacy.o",
+        "sha256_hash": "24e0eedca8614ae2770438be87e60adf2d8887b8f0d2150595f569c3ec059aaa"
+    },
+    "bpf2bpf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/bpf2bpf.o",
+        "sha256_hash": "6d0a15d5691fd0ac1fbd311eb82687f25e3012bfe260fe870b3f920f73e9f1d9"
+    },
+    "store_map_value_in_map.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/store_map_value_in_map.o",
+        "sha256_hash": "fe4c523ff5637a780043c78a6e42e6d42346f98063ecf14f541b9281514b20d1"
+    },
+    "twomaps_btf.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/twomaps_btf.o",
+        "sha256_hash": "9f22738859b4be7441da0f2ec4a9da9446dd1f0f42e688db6fefcdcd01888a2c"
+    },
+    "percpu_hash.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/percpu_hash.o",
+        "sha256_hash": "829df38db90f8ec8871f3d13aa337f30bbd8b535b071d4571fbab39bd74ffee7"
+    },
+    "percpu_array.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/percpu_array.o",
+        "sha256_hash": "86eb2d2218bb452acb2e54764083fd5b20180d76d8687475c4cf1cbcce8cdfaa"
+    },
+    "ctxoffset.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/ctxoffset.o",
+        "sha256_hash": "18254344bee338627a9cca56451572a61be1700630a6a965b3fe9472931dcc05"
+    },
+    "queue_stack.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/queue_stack.o",
+        "sha256_hash": "eb64656b47a565b0292c06bab85f7e0b5e3a25275a33f74e92b3dd69cc35fdcf"
+    },
+    "exposeptr2.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/exposeptr2.o",
+        "sha256_hash": "2c85f830035612e1fd2e68e832711cc2b28a18988e93a612847816f3e7d4f72c"
+    },
+    "twomaps.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/twomaps.o",
+        "sha256_hash": "36e67ae985b7d61626176495e7a9533ac7d06341b13859533b6450d87f1c21f9"
+    },
+    "byteswap.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/byteswap.o",
+        "sha256_hash": "2c0ef1571cc15a16015405902b8fd256d37f4c2f375e4440a2dfa39e90ecfe87"
+    },
+    "global_variable_2.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/global_variable_2.o",
+        "sha256_hash": "f09b7f7aa857bf05b441119e2818d9456ec2b78b6edf9a0554ec820d2b4cd52d"
+    },
+    "stackok.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/stackok.o",
+        "sha256_hash": "4ff292370a3643e5138ef6847745859e0d36d5d3b410af547c9090e2b0e5a8db"
+    },
+    "ringbuf_uninit.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/ringbuf_uninit.o",
+        "sha256_hash": "5fb48de27a1cdce4afd79ed27ef1c4ec532b4ec45fdad2171645cebcee617d9d"
+    },
+    "dependent_read.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/dependent_read.o",
+        "sha256_hash": "a2971859ad7a487f363191f6b953c5a48836367fd4c3200a1e143e52649b9751"
+    },
+    "sockmap.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Socket/Networking",
+        "original_path": "build/sockmap.o",
+        "sha256_hash": "37603c4892c31477ca0feb7ff6fbbcc714d97a6172f3ccc0be9a9a78ee7bb105"
+    },
+    "prog_array.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/prog_array.o",
+        "sha256_hash": "66a243bdec9bc837ec786c893c7b2485e8311de9e267ff8c58cb8b96a420ee9a"
+    },
+    "devmap.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/devmap.o",
+        "sha256_hash": "73a55b60f55865c06074b9b50a9e38e9c6f2abec9b5d8c4fb783d8e27af4b0f1"
+    },
+    "packet_start_ok.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/packet_start_ok.o",
+        "sha256_hash": "cce579f2b778396df5c023eeb8b58fb11e7eca52ca4945565a8712cf98403f19"
+    },
+    "exposeptr.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/exposeptr.o",
+        "sha256_hash": "7be4670d023e15cd06044cfde23f1c8adc62e21f5544ef5accb8bd0d0c60444d"
+    },
+    "map_in_map.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/map_in_map.o",
+        "sha256_hash": "ad96273a46347e9e9ef3db117b8b274702b6d65310a24947d123ab26b89201a2"
+    },
+    "twotypes.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/twotypes.o",
+        "sha256_hash": "b4a44a2bb4c051dff5f7a24f1059786317ae0774309e30bc99f15dbbab5cf07d"
+    },
+    "twostackvars.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/twostackvars.o",
+        "sha256_hash": "fe66521bc6fa60f575668f3a33e71fb479bd1003b125bb00627bb885040232f7"
+    },
+    "global_func.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/global_func.o",
+        "sha256_hash": "00811d93255de644c916cec859b1a89ae01ec30e81679e9545bc49e689efd43a"
+    },
+    "ptr_arith.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/ptr_arith.o",
+        "sha256_hash": "91679d82a2164a63c9e214a18116b9e17f5c38d4d9092f826f8696806e09208c"
+    },
+    "map_in_map_typedef.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/map_in_map_typedef.o",
+        "sha256_hash": "2166ceec9f75bd80142631a3973aa08941f2ef6024dff7e6d03db1f1820714c8"
+    },
+    "mapoverflow.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/mapoverflow.o",
+        "sha256_hash": "4eb0805c633d4d2c4363e86f71a81a8b7a4f45163b1ba17005d494ed5f5d5e5a"
+    },
+    "correlated_branch.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Misc eBPF Samples",
+        "program_type": "Other eBPF",
+        "original_path": "build/correlated_branch.o",
+        "sha256_hash": "bca7e4c161b1cc9d8be5752edd677a1cd548adf25e30048460ebb63fa0898b94"
+    },
+    "ebpf-samples_1_bpf_xdp.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp.o",
+        "sha256_hash": "ed91e002eef9035aea617644f92ffef826fe7ea95cbaa286f1f7863ee72ce53c"
+    },
+    "bpf_netdev.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Other eBPF",
+        "original_path": "cilium/bpf_netdev.o",
+        "sha256_hash": "03c973f21828aefdfc8861523fdbfc0a5d7ad56364507154c89e248884d67b13"
+    },
+    "ebpf-samples_1_bpf_overlay.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Other eBPF",
+        "original_path": "cilium/bpf_overlay.o",
+        "sha256_hash": "f58c7ff386ddc2c7270a9359d1dd7e2906289c4e974f88375dadeaaf2e8251d8"
+    },
+    "bpf_lb.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Other eBPF",
+        "original_path": "cilium/bpf_lb.o",
+        "sha256_hash": "93328413112753bf95c4ae9646acbe47084af7a5c4c79c26477c5c345bdfcdae"
+    },
+    "bpf_xdp_snat_linux_v1.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp_snat_linux_v1.o",
+        "sha256_hash": "2bd51d41ba15225c65b908149a951a4270fbd6f9c8233f23ab46d0b54ac10cd2"
+    },
+    "bpf_xdp_dsr_linux_v1.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp_dsr_linux_v1.o",
+        "sha256_hash": "eac2b1242d757406cf240f370b8ad72741596ea403d8d5eaf3f2ec4fca11ba1f"
+    },
+    "bpf_xdp_snat_linux.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp_snat_linux.o",
+        "sha256_hash": "7f3c25917b74019a833198686bffebb84598d6ebc82c3f79525089cb79d33489"
+    },
+    "bpf_xdp_dsr_linux.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp_dsr_linux.o",
+        "sha256_hash": "5fc4ab87eb409464ae51d6b0b101038aaba47e5b74eefc07863c36a517e68cf2"
+    },
+    "bpf_xdp_dsr_linux_v1_1.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "XDP Hook",
+        "original_path": "cilium/bpf_xdp_dsr_linux_v1_1.o",
+        "sha256_hash": "cf4a9e9a9f4e1c14172b2d7fde860f94ddf0872893ba15165684c7557b0660f3"
+    },
+    "ebpf-samples_1_bpf_lxc.o": {
+        "source_repo": "ebpf-samples",
+        "industry_category": "Cloud Native Networking (Cilium)",
+        "program_type": "Other eBPF",
+        "original_path": "cilium/bpf_lxc.o",
+        "sha256_hash": "19c40aaf98552601481e7e4ecf5cae6ed7525aa9424df55d4d52c40136177cdf"
+    }
+}

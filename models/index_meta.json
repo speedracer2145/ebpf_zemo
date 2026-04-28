@@ -1,0 +1,1394 @@
+[
+  {
+    "filename": "bloom_filter_map.o",
+    "summary": "This eBPF program appears to operate at a hook point such as XDP or TC. It performs map operations including lookup and update, specifically targeting certain fields within packet metadata (e.g., ports). The core logic involves checking conditions and modifying packet handling decisions based on these map entries, potentially filtering or redirecting packets based on their attributes.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 9640
+  },
+  {
+    "filename": "bpf2bpf.o",
+    "summary": "This eBPF program operates as an XDP hook and performs packet filtering. It utilizes map operations to lookup and update entries, and it drops packets based on specific conditions related to their content. The core logic involves reading packet data, performing calculations, and making decisions based on the results.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6968
+  },
+  {
+    "filename": "bpf_cubic.o",
+    "summary": "The eBPF program appears to be attached to a hook point such as XDP or TC. It involves several map operations, including lookups and updates. The core logic seems to involve packet handling based on certain conditions, possibly related to traffic filtering or counting packets in maps. The exact behavior (drop, pass, redirect) is not clearly defined from the given code snippet.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 509064
+  },
+  {
+    "filename": "bpf_dctcp.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point. It primarily involves map operations such as lookup and update, focusing on managing connection states and window sizes for TCP connections. The core logic seems to involve handling cwnd events and updating various connection parameters based on the state of the TCP session.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 499576
+  },
+  {
+    "filename": "bpf_host.o",
+    "summary": "This eBPF program operates as an XDP hook to inspect and manipulate network packets. It performs map operations such as lookup and update, and it implements logic to drop or pass packets based on certain conditions, likely related to packet metadata like port numbers or timestamps. The core functionality involves filtering and counting traffic based on specific criteria, with results stored in maps for further analysis or decision-making.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2139296
+  },
+  {
+    "filename": "bpf_lb.o",
+    "summary": "The eBPF program appears to operate as an XDP hook for network packet processing. It performs a lookup operation on a map to check if a packet meets certain criteria (likely based on IP address or port). If the packet passes, it increments a counter in another map to track the number of packets that meet the criteria. The core logic involves filtering traffic and updating counters based on packet attributes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 36024
+  },
+  {
+    "filename": "bpf_lxc.o",
+    "summary": "The program appears to be an eBPF TC (Traffic Control) hook that processes network packets. It uses maps for lookup and update operations, likely to track or filter traffic based on specific criteria. The core logic involves handling packets by either passing them through or dropping them based on the results of map lookups.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 1475240
+  },
+  {
+    "filename": "bpf_netdev.o",
+    "summary": "This eBPF program operates as an XDP hook. It performs packet processing by performing operations on eBPF maps for lookup and update. The core logic involves filtering packets based on their destination ports and updating counters accordingly. If a packet meets certain criteria, it is passed; otherwise, it is dropped.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 121096
+  },
+  {
+    "filename": "bpf_network.o",
+    "summary": "This eBPF program operates at the XDP hook point to filter network packets. It performs map operations such as lookup and update to manage packet metadata and statistics. The core logic involves checking packet characteristics (e.g., port numbers) to decide whether to pass, drop, or redirect the packets based on predefined rules.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 60136
+  },
+  {
+    "filename": "bpf_overlay.o",
+    "summary": "The eBPF program appears to be an XDP hook that processes packets. It performs map operations such as lookup and update, and handles packet behavior based on the core logic within.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 1024448
+  },
+  {
+    "filename": "bpf_sock.o",
+    "summary": "This eBPF program operates as a Kprobe hook point. It performs operations on packet metadata by updating and looking up entries in maps, such as counting packets or filtering traffic based on conditions like ports. The core logic involves updating counters and potentially dropping or redirecting packets based on the contents of these map entries.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 239176
+  },
+  {
+    "filename": "bpf_wireguard.o",
+    "summary": "This eBPF program operates at the XDP hook point. It performs packet filtering and counting by updating a map with packet information.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 896960
+  },
+  {
+    "filename": "bpf_xdp.o",
+    "summary": "This eBPF program operates at the XDP hook point and performs packet filtering based on specific criteria. It uses maps for lookup operations to check if a packet meets certain conditions, such as checking TCP flags or ports. If the packet passes these checks, it is allowed to continue; otherwise, it is dropped. The core logic involves counting packets that match the specified conditions in a map for monitoring purposes.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 946696
+  },
+  {
+    "filename": "bpf_xdp_dsr_linux.o",
+    "summary": "The eBPF program appears to operate at the XDP hook point. It performs map operations such as lookup and update, primarily for traffic filtering and packet handling based on certain conditions. The core logic involves checking packet characteristics (e.g., port numbers) and deciding whether to pass or drop the packets accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2156776
+  },
+  {
+    "filename": "bpf_xdp_dsr_linux_v1.o",
+    "summary": "This eBPF program appears to be attached as an XDP hook. It uses `MAP_UPDATE` and `MAP_LOOKUP` operations on several maps. The core logic involves packet handling, likely filtering based on certain criteria (possibly ports), and updating counters or other metadata in the maps. There is no explicit packet drop or redirect; instead, it seems to modify packet state or pass them further down the stack.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2156768
+  },
+  {
+    "filename": "bpf_xdp_dsr_linux_v1_1.o",
+    "summary": "This eBPF program operates as an XDP hook point and performs packet filtering based on specific port conditions. It uses map operations to lookup and update counters for different ports, effectively counting incoming packets and determining whether to pass or drop them based on predefined criteria.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2131240
+  },
+  {
+    "filename": "bpf_xdp_snat_linux.o",
+    "summary": "This eBPF program appears to be attached as an XDP hook point. It performs operations on packet metadata and updates maps accordingly, likely for the purpose of monitoring or filtering network traffic based on specific criteria such as port numbers or addresses. The core logic involves looking up and updating a map to track packet counts or other relevant data.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2067128
+  },
+  {
+    "filename": "bpf_xdp_snat_linux_v1.o",
+    "summary": "The eBPF program appears to operate as an XDP hook, likely for packet filtering or modification. It uses map operations such as lookup and update to manage state and potentially redirect or drop packets based on certain conditions. The core logic involves examining packet headers and making decisions based on the values found, which could include filtering by port numbers or updating counters in maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2067128
+  },
+  {
+    "filename": "bypass_filter.o",
+    "summary": "This eBPF program appears to operate as an XDP (eXpress Data Path) hook. It performs several map operations, including lookups and updates, on shared maps. The core logic involves examining and modifying packet data based on specific conditions, likely related to protocol handling or network traffic classification.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Network Security (Suricata)",
+    "file_size": 2056
+  },
+  {
+    "filename": "byteswap.o",
+    "summary": "This eBPF program appears to be designed for packet processing at a hook point such as XDP or TC. It performs bitwise operations and conditional checks on the packet data, likely based on certain fields like source or destination port numbers. The core logic seems to involve filtering packets based on specific conditions and possibly updating maps with relevant information without altering the packet itself.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5136
+  },
+  {
+    "filename": "cgroup_skb_bpf_bpfel.o",
+    "summary": "This eBPF program is designed to operate at the egress packet processing stage. It initializes and uses a map for packet count tracking, incrementing the counter each time it processes an outgoing packet. The core logic involves counting packets as they exit the system, which could be used for monitoring or traffic analysis purposes.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2752
+  },
+  {
+    "filename": "correlated_branch.o",
+    "summary": "This eBPF program appears to operate as an XDP (eXpress Data Path) hook point. It primarily focuses on packet handling, specifically filtering packets based on protocol type and updating a map with relevant information. The core logic involves checking if the incoming packet is of TCP or UDP protocol and then updating a map entry accordingly. If the packet is not of interest, it proceeds to pass the packet through unchanged.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 8448
+  },
+  {
+    "filename": "correlated_branch2.o",
+    "summary": "This eBPF program appears to be attached to a network hook point (likely XDP or TC) and processes incoming packets. It performs map lookups and updates, specifically interacting with maps at addresses derived from the packet context. The core logic involves filtering traffic based on certain conditions related to packet types (e.g., checking for an Ethernet type of 0x806) and updating maps accordingly. Depending on the values found in these maps, the program may either pass or drop packets, potentially altering their path within the network stack.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 9016
+  },
+  {
+    "filename": "cpumap.o",
+    "summary": "The eBPF program appears to be an XDP (eXpress Data Path) hook that initializes registers and calls a helper function at address 0x33 before exiting. The core logic is not explicitly clear from the provided FCFG, as there are no map operations or packet handling instructions listed.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5352
+  },
+  {
+    "filename": "cpustat_kern.o",
+    "summary": "This eBPF program appears to operate as a network traffic classifier at the XDP hook point. It performs map lookups, updates, and possibly redirects packets based on packet metadata and certain conditions (e.g., specific ports or addresses). The core logic involves filtering and counting packets in various maps, with conditional branches based on packet content for further processing or dropping.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 3856
+  },
+  {
+    "filename": "ctxoffset.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs a lookup operation in a map (`MAP_LOOKUP`). If the lookup is successful, it sets a register to 0 and exits without further processing. The core logic suggests that it may be used for filtering traffic based on some criteria or metadata stored in the map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 8128
+  },
+  {
+    "filename": "dependent_read.o",
+    "summary": "This eBPF program operates as an XDP hook. It reads data from packet metadata and checks if a specific condition is met by comparing two 32-bit values. If the condition is true, it drops the packet; otherwise, it passes the packet unchanged.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4216
+  },
+  {
+    "filename": "devmap.o",
+    "summary": "The eBPF program is an XDP (eXpress Data Path) hook that initializes registers and calls an external helper function at address 0x33. It then exits without performing any packet operations or map interactions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5416
+  },
+  {
+    "filename": "ebpf-samples_1_bpf_lxc.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point, likely for network packet filtering. It involves map operations such as lookup and update. The core logic seems to involve counting packets based on certain criteria (e.g., port numbers) and storing this information in a map. If a packet meets specific conditions, it may be dropped; otherwise, it is allowed to pass through.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 418312
+  },
+  {
+    "filename": "ebpf-samples_1_bpf_overlay.o",
+    "summary": "This eBPF program operates as an XDP hook. It processes packets by looking up destination ports and updating a map with packet metadata. The core logic involves filtering traffic based on specific port conditions, potentially dropping or passing packets accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 85032
+  },
+  {
+    "filename": "ebpf-samples_1_bpf_xdp.o",
+    "summary": "This eBPF program appears to be attached at a TC (Traffic Control) hook point. It processes network packets by reading various fields and performing map operations such as lookup and update. The core logic involves filtering traffic based on specific port numbers and updating maps with packet-related information, potentially for monitoring or policy enforcement purposes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 15560
+  },
+  {
+    "filename": "ebpf-samples_1_sock_flags_kern.o",
+    "summary": "This eBPF program is likely attached to an egress hook point such as XDP or TC. It performs several operations including updating and looking up entries in maps, and handling packets based on their content. The core logic involves filtering traffic by checking specific port numbers and modifying packet metadata before passing them along the network path.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 1976
+  },
+  {
+    "filename": "ebpf-samples_1_sockex1_kern.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point. It examines the first byte of an incoming packet and, if the value matches 0x4, proceeds to look up a key in a map. If the lookup is successful, it increments a counter associated with that key in another map and then exits, effectively counting packets based on their content.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 1168
+  },
+  {
+    "filename": "ebpf-samples_1_sockex2_kern.o",
+    "summary": "This eBPF program appears to be attached at an eXpress Data Path (XDP) hook point. It processes network packets, filtering and handling them based on specific conditions related to IP addresses and protocol types. The core logic involves checking packet headers for specific values, updating a map with packet information, and potentially dropping or passing the packet based on these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 3280
+  },
+  {
+    "filename": "ebpf-samples_1_sockex3_kern.o",
+    "summary": "This eBPF program operates as an XDP hook. It performs packet filtering by checking certain fields in IP and TCP headers, likely for specific ports or protocols. The program uses maps to track and update statistics about filtered traffic. If a packet meets the filter criteria, it is dropped; otherwise, it is allowed to pass through.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 7352
+  },
+  {
+    "filename": "ebpf-samples_1_trace_output_kern.o",
+    "summary": "The eBPF program appears to be an XDP hook that performs packet processing. It reads a value from a map using `MAP_LOOKUP`, then updates another map with a new value using `MAP_UPDATE`. The core logic involves setting up pointers and registers, making a call to a helper function (`call 0x19`), and exiting the program with a return value of 0, indicating that the packet should pass through.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 1256
+  },
+  {
+    "filename": "ebpf-samples_1_tracex1_kern.o",
+    "summary": "This eBPF program appears to be hooked at a probe point and primarily involves packet metadata manipulation. It uses `MAP_LOOKUP` and `MAP_UPDATE` operations on an eBPF map to store or retrieve data, and it performs conditional checks based on these values. The core logic seems to involve filtering packets based on certain conditions and potentially updating the map with relevant information.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 1408
+  },
+  {
+    "filename": "ebpf-samples_1_tracex2_kern.o",
+    "summary": "This eBPF program appears to be running as an XDP hook. It performs map operations including lookup and update, specifically on a map referenced by `r2`. The core logic involves filtering or counting packets based on port numbers, likely for traffic control purposes. The program may drop or redirect packets based on the contents of the maps it interacts with.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 3024
+  },
+  {
+    "filename": "ebpf-samples_1_tracex3_kern.o",
+    "summary": "This eBPF program appears to be operating as an XDP hook, performing packet handling and map operations. It updates a map with timestamps, increments counters for packets, and potentially redirects or drops packets based on certain conditions. The core logic involves counting packets and updating timestamps in the map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 2896
+  },
+  {
+    "filename": "ebpf-samples_1_tracex4_kern.o",
+    "summary": "This eBPF program operates at the Kprobe hook point and primarily involves map operations such as lookup and update. It appears to count packets by updating a map, potentially based on certain criteria or attributes of the packet (e.g., port number). The core logic seems to be filtering or counting traffic, though without more context, the exact behavior cannot be definitively determined.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 1688
+  },
+  {
+    "filename": "ebpf-samples_1_tracex6_kern.o",
+    "summary": "This eBPF program appears to be designed for an XDP hook point. It performs packet handling and map operations, specifically looking up entries in a map, updating another map, and potentially dropping or passing packets based on certain conditions. The core logic involves filtering traffic based on port numbers by utilizing helper functions and conditional checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 2288
+  },
+  {
+    "filename": "ebpf-samples_1_tracex7_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that drops packets. It initializes a return value (`r2`) to `-0xc`, which is likely indicating a failure or drop, and then calls a helper function at address `0x3a`. The core logic seems to involve some form of packet handling followed by either dropping the packet or performing another action as indicated by the exit condition.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 952
+  },
+  {
+    "filename": "ebpf-samples_1_xdp_monitor_kern.o",
+    "summary": "This eBPF program appears to be hooked at the TC (Traffic Control) layer. It primarily counts packets and updates a map with counters, focusing on specific packet fields such as destination ports. The core logic involves checking if a packet meets certain criteria based on its destination port and updating a map with the count of packets that meet these criteria. If the packet does not meet the criteria, it is likely passed through unchanged.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 5184
+  },
+  {
+    "filename": "ebpf-samples_1_xdp_redirect_cpu_kern.o",
+    "summary": "This eBPF program operates as an XDP hook and processes network packets. It performs map operations such as lookup and update to filter and manage packet traffic based on specific criteria, including port numbers and addresses. The core logic involves passing or dropping packets based on these conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 11544
+  },
+  {
+    "filename": "exitsnoop.bpf.o",
+    "summary": "This eBPF program is likely attached to a networking hook point such as TC. It performs operations on packet data and metadata using maps for storage. The core logic appears to involve filtering or modifying packets based on certain conditions, possibly related to port numbers or other attributes. If conditions are met, it may update maps with relevant information before passing the packet along or redirecting it elsewhere.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Performance Tracing (BCC)",
+    "file_size": 463024
+  },
+  {
+    "filename": "exposeptr.o",
+    "summary": "This eBPF program appears to operate as an XDP hook, updating a map with a zero value. It initializes registers and calls a function at address 0x2 before exiting. The core logic seems to involve counting packets or resetting a counter in a map, possibly based on certain conditions not explicitly detailed in the provided FCFG snippet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5352
+  },
+  {
+    "filename": "exposeptr2.o",
+    "summary": "This eBPF program appears to operate at an unknown hook point. It performs a map update operation using `MAP_UPDATE` semantic tags, indicating that it likely involves modifying state or metadata in a map structure. The core logic seems to be initializing variables and calling a function (likely for further processing or decision-making), before exiting without packet handling actions such as drop, pass, or redirect.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5432
+  },
+  {
+    "filename": "externalfunction.o",
+    "summary": "This eBPF program appears to be an XDP hook that increments a counter stored in a map when invoked. It checks if a certain condition is met (indicated by the `if r1 == 0x0` statement) and, if true, proceeds to update a map entry with the value from `w1`. The core logic involves counting packets based on some criteria.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5240
+  },
+  {
+    "filename": "fentry.bpf.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point. It performs map lookups and updates, specifically using `MAP_REF` and `TRACE_PRINTK`. The core logic involves packet handling based on certain conditions, likely filtering traffic or counting packets in a map, as indicated by the use of `PKT_READ`, `WALL-clock time (NTP) update`, and conditional logic based on the result of the map lookup.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 7960
+  },
+  {
+    "filename": "fentry_bpf_bpfel.o",
+    "summary": "This eBPF program appears to be hooked at a network layer (possibly XDP or TC). It performs operations on packet metadata, such as updating fields like source and destination ports. The core logic involves mapping operations to store or retrieve data associated with packets, which could be used for traffic filtering or counting.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 3336
+  },
+  {
+    "filename": "fexit_sleep.o",
+    "summary": "The eBPF program appears to be hooked at a function entry point (`nanosleep_fentry` and `nanosleep_fexit`). It performs map lookups and updates, specifically targeting a 32-bit value stored at address `0x0`. The core logic involves incrementing this value by 1 for each function call. There is no packet handling behavior observed; the program focuses solely on modifying a shared state within maps.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 6152
+  },
+  {
+    "filename": "filter.o",
+    "summary": "The eBPF program appears to be an XDP hook that reads packet metadata using `PKT_READ`. It updates a map with a constant value and checks if a specific condition is met; if not, it drops the packet. The core logic involves reading packet data and making a decision based on the result, potentially for traffic filtering purposes.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 768
+  },
+  {
+    "filename": "global_func.o",
+    "summary": "This eBPF program appears to operate at the egress hook point and likely uses `XDP` or `TC`. It involves map operations for lookup and update, specifically targeting a 64-bit value stored in a map. The core logic seems to involve checking a packet's header (possibly port number) against an entry in a map. If the check passes, it updates a counter in the map; if not, it proceeds without making any changes to the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 7840
+  },
+  {
+    "filename": "global_variable.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes network packets. It performs two memory-based operations using maps: it increments values in a lockable map (MAP_REF) and updates another map with a value from a packet field (PKT_READ). The core logic seems to involve counting packets based on some criteria and updating a map accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5336
+  },
+  {
+    "filename": "global_variable_2.o",
+    "summary": "This eBPF program operates at the packet processing stage as indicated by the `PKT_READ` tag. It initializes a register with a zero value, reads a 32-bit unsigned integer from an unspecified memory location, and then exits without further processing or any impact on packet handling. There are no map operations or specific packet handling behaviors; it merely reads data and terminates.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 3928
+  },
+  {
+    "filename": "hash_of_maps.o",
+    "summary": "This eBPF program appears to be a TC hook that performs two map lookups. It reads values from maps using addresses stored in registers and compares the results with zero. If either lookup returns zero, it jumps to the end, indicating a drop or no further processing. Otherwise, it retrieves a value from the first map's entry pointed to by the result of the second lookup and exits, possibly passing or redirecting the packet based on this value.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6184
+  },
+  {
+    "filename": "kfree_skb.o",
+    "summary": "This eBPF program appears to operate as an XDP hook, filtering network packets. It performs map operations such as lookup and update, and it redirects packets based on specific conditions, such as packet type or content. The core logic involves checking packet headers, updating internal state in maps, and potentially dropping or redirecting packets based on the results of these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 15920
+  },
+  {
+    "filename": "kprobe.bpf.o",
+    "summary": "This eBPF program appears to be an XDP hook designed for packet processing. It performs operations such as reading and updating maps, checking packet metadata with helper functions like `TRACE_PRINTK`, and potentially modifying or dropping packets based on certain conditions. The core logic seems to involve filtering or counting packets using map entries.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Kprobe",
+    "category": "Misc eBPF Samples",
+    "file_size": 10688
+  },
+  {
+    "filename": "kprobe_bpf_bpfel.o",
+    "summary": "This eBPF program is a kprobe that hooks into the `execve` system call. It initializes registers and makes a function call at address 0x1, likely to perform some pre-execution checks or preparations. If the call returns non-zero, it jumps to a label indicating an error path. Otherwise, it performs a map lookup and update operation on maps at addresses r3 and r0, respectively. The core logic involves counting or tracking execve calls in a map.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2664
+  },
+  {
+    "filename": "kprobe_percpu_bpf_bpfel.o",
+    "summary": "This eBPF program is a kprobe hook for the `execve` system call. It performs a map lookup, updates a map with a counter, and then exits without any packet handling behavior. The core logic is to count the number of times the `execve` syscall is invoked.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Kprobe",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2664
+  },
+  {
+    "filename": "kprobepin_bpf_bpfel.o",
+    "summary": "This eBPF program is a kprobe hook at `kprobe_execve`, designed to perform map operations and handle packet execution. It initializes registers, performs a map lookup, updates another map with a counter, and then exits.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Kprobe",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 2696
+  },
+  {
+    "filename": "ksyscall.bpf.o",
+    "summary": "The eBPF program is likely hooked at a network layer, possibly XDP or TC. It performs several map operations such as lookup and update. The core logic involves packet handling: it checks certain conditions (possibly based on port numbers), and if they are met, updates maps with packet-related data. If the conditions are not met, it drops or passes the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 14072
+  },
+  {
+    "filename": "lathist_kern.o",
+    "summary": "This eBPF program appears to be a TC (Traffic Control) hook that operates at packet level. It performs operations such as `MAP_LOOKUP` and `MAP_UPDATE` on eBPF maps to count or filter packets based on specific criteria, likely involving port numbers or timestamps. The core logic involves checking conditions using bitwise shifts and comparisons before potentially updating the map or passing/redirecting the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 2864
+  },
+  {
+    "filename": "lb.o",
+    "summary": "This eBPF program appears to be running at the XDP hook point. It involves map operations such as lookup and update, primarily focused on packet handling. The core logic seems to be counting packets in various maps based on their metadata and payload content.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 1216
+  },
+  {
+    "filename": "lpm_trie.o",
+    "summary": "This eBPF program is likely an XDP (eXpress Data Path) hook that performs route lookup and packet handling. It uses a map for lookups (`MAP_REF`) to determine if a packet should be passed, dropped, or redirected based on its destination IP address. The core logic involves checking the packet's destination in a map, updating the map if necessary, and then deciding whether to pass or drop the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6680
+  },
+  {
+    "filename": "lsm.bpf.o",
+    "summary": "This eBPF program is likely attached to an eXpress Data Path (XDP) hook point. It performs a map lookup operation and checks if a specific condition (value at memory offset 0x18 of register r1 not equal to zero) is met. If the condition is true, it sets a return value of -1 and exits, effectively dropping the packet. If the condition is false, it proceeds with further processing, possibly involving additional function calls or handling the packet differently.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 13208
+  },
+  {
+    "filename": "lwt_len_hist_kern.o",
+    "summary": "This eBPF program is likely attached as an XDP hook. It processes packets by extracting and manipulating their source port using bitwise operations. The core logic involves updating a map with a counter for each unique source port, indicating packet counts per port. If the packet's source port falls within certain ranges, it updates the corresponding entry in the map. If not, or after a series of conditional checks, the program likely passes the packet unchanged.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1688
+  },
+  {
+    "filename": "map_in_map.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs packet filtering based on port numbers. It uses two maps for lookup operations and exits if no match is found, indicating that it drops packets not meeting the criteria.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6208
+  },
+  {
+    "filename": "map_in_map_anonymous.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs map operations and packet handling. It reads data from a map, updates another map, and potentially drops or passes packets based on the outcomes of these operations. The core logic involves filtering traffic based on certain criteria stored in maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5712
+  },
+  {
+    "filename": "map_in_map_legacy.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs operations on network packets. It checks two maps using `MAP_LOOKUP` instructions, updating registers based on the outcomes of these lookups. If certain conditions are met (as indicated by the control flow), it may drop or pass the packet. The core logic seems to involve filtering or manipulating packets based on their content or metadata stored in the maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 1088
+  },
+  {
+    "filename": "map_in_map_typedef.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs packet filtering based on certain conditions. It checks for the existence of keys in maps and updates counters accordingly, then either passes or drops the packet based on the results.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6792
+  },
+  {
+    "filename": "map_perf_test_kern.o",
+    "summary": "This eBPF program operates at the XDP hook point. It performs packet filtering and redirection based on certain conditions, likely involving port numbers or other packet attributes. The core logic involves looking up keys in maps to determine the action for each packet (e.g., pass, drop, redirect). Additionally, it updates counters in maps to track packet statistics.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 16032
+  },
+  {
+    "filename": "mapoverflow.o",
+    "summary": "This eBPF program appears to be running as an XDP hook, updating a map with specific values. It initializes registers and calls a function at address 0x2 before exiting. The core logic involves updating a map based on some criteria not explicitly visible in this snippet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5448
+  },
+  {
+    "filename": "mapunderflow.o",
+    "summary": "This eBPF program operates as an XDP hook, performing map updates using `MAP_REF` and `MAP_UPDATE` operations. It likely filters or modifies network traffic based on packet attributes, though the specific logic is not fully clear from the provided FCFG data alone.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5344
+  },
+  {
+    "filename": "mapvalue-overrun.o",
+    "summary": "This eBPF program is designed to run at XDP hook point. It initializes a variable and updates a map with a pointer value. The core logic involves looking up an entry in the map, which suggests that it might be used for traffic filtering or packet handling based on certain criteria stored in the map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5424
+  },
+  {
+    "filename": "napi_monitor_kern.o",
+    "summary": "This eBPF program is likely attached at a hook point such as XDP or TC. It performs packet handling and map operations to filter, redirect, or pass packets. The core logic involves checking packet metadata (like source port) and updating counters in maps based on certain conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 2992
+  },
+  {
+    "filename": "offwaketime_kern.o",
+    "summary": "This eBPF program appears to be an XDP or TC hook point that processes network packets. It performs several operations including map lookups and updates, packet handling (likely filtering based on certain conditions), and counting packets using maps. The core logic involves checking packet headers and updating counters or performing actions like dropping or passing the packets based on those checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 2832
+  },
+  {
+    "filename": "packet_access.o",
+    "summary": "This eBPF program appears to be hooked at a packet processing level, possibly as an XDP or TC filter. It operates by looking up and updating values in a map, likely for traffic classification or counting purposes. The core logic involves checking conditions based on the packet data and updating counters accordingly. If a condition is met, it may redirect or pass the packet; otherwise, it drops it.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5792
+  },
+  {
+    "filename": "packet_overflow.o",
+    "summary": "This eBPF program is likely hooked at a packet ingress point, possibly XDP or TC. It reads packet metadata from an input register and performs a lookup operation to check if a value exists in a map. If the lookup fails (i.e., `r2 > r1`), it proceeds to read more data from the packet and updates a value in the map. If the lookup is successful, it exits without any action, suggesting that packets matching the criteria are allowed or ignored based on the map's state.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4816
+  },
+  {
+    "filename": "packet_reallocate.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point and focuses on packet handling. It performs map operations such as lookup and update, specifically interacting with two maps. The core logic involves reading and modifying packet fields based on their values in the maps, potentially for traffic filtering or counting purposes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 8912
+  },
+  {
+    "filename": "packet_start_ok.o",
+    "summary": "This eBPF program is an XDP program designed to filter network traffic. It reads packet metadata, updates a map with packet counts, and then passes the packet if the count is within a certain threshold or drops it otherwise. The core logic involves reading a port number from the packet, updating a map entry with the packet count for that port, and comparing the count against a predefined limit to decide whether to pass or drop the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4888
+  },
+  {
+    "filename": "percpu_array.o",
+    "summary": "This eBPF program appears to be an XDP hook that increments a counter in a per-CPU array map each time it is executed. It checks if a certain condition (not explicitly detailed) is met by calling an external function, and then proceeds to look up a value in the map, increment it, and store the new value back into the map before exiting.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5960
+  },
+  {
+    "filename": "percpu_hash.o",
+    "summary": "This eBPF program appears to be an XDP hook that operates on network packets. It uses a per-CPU hash map for lookups and updates, specifically for incrementing packet counters or retrieving existing values. The core logic involves reading a value from the map, incrementing it, and then storing it back, indicating a potential counting mechanism based on packet attributes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6576
+  },
+  {
+    "filename": "perf_event_array.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs a series of operations on network packets. It uses helper functions to get the current time, update maps with packet-related data, and potentially drop or pass packets based on certain conditions. The core logic seems to involve counting packets in a map and possibly filtering traffic based on port numbers or other attributes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6176
+  },
+  {
+    "filename": "probe.o",
+    "summary": "The eBPF program appears to operate at the XDP hook point. It performs map operations such as looking up and updating entries. The core logic involves counting packets, possibly filtering them based on certain criteria, and then handling the packet accordingly (e.g., passing it along).",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 4190376
+  },
+  {
+    "filename": "profile.bpf.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes network packets. It involves looking up and updating values in several maps, and potentially modifying packet behavior (e.g., passing or dropping). The core logic seems to involve filtering traffic based on certain conditions and counting packets using maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 7832
+  },
+  {
+    "filename": "prog_array.o",
+    "summary": "This eBPF program appears to operate as an XDP filter. It performs a series of operations on packet data, including calling helper functions (`HELPER_7` and `HELPER_12`) that likely involve map operations (lookup and update). The core logic seems to be filtering traffic based on certain conditions, potentially related to port numbers or other packet attributes. After processing, the program either passes the packet through (`exit 0x0`) or drops it (`exit 0xffffffff`).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6384
+  },
+  {
+    "filename": "ptr_arith.o",
+    "summary": "This eBPF program appears to be attached as an XDP (eXpress Data Path) hook. It reads packet metadata and checks certain fields, likely involving ports or other identifiers stored in maps. If the conditions are met based on these checks, it performs a no-op operation and exits, suggesting that packets passing this filter are allowed through without further action.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4520
+  },
+  {
+    "filename": "queue_stack.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs several operations on network packets. It maps packet metadata, updates counters in a map, and potentially redirects or modifies packets based on the values retrieved from the map. The core logic seems to involve filtering and counting packets, with conditional branching based on map lookups.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6264
+  },
+  {
+    "filename": "ringbuf_in_map.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs operations on network packets. It looks up entries in maps and updates them, which suggests it is likely used for packet filtering or statistics collection based on specific criteria, such as port numbers. The core logic involves checking and possibly modifying the behavior of incoming packets, potentially dropping or redirecting them based on conditions met during map lookups.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6520
+  },
+  {
+    "filename": "ringbuf_uninit.o",
+    "summary": "This eBPF program appears to be an XDP program. It initializes registers and makes a call to a helper function at address 0x82, which could involve packet operations or other tasks as indicated by the `HELPER_130` tag. The program then exits without any further actions, suggesting it may have been designed for a specific task such as initializing state rather than performing filtering or redirection.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4944
+  },
+  {
+    "filename": "ringbuffer_bpf_bpfel.o",
+    "summary": "This eBPF program is executed as a kprobe at the `execve` syscall hook point. It performs a map lookup and update operation, modifying data associated with the syscall arguments. The core logic appears to be logging or tracking syscall parameters by updating a map.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2736
+  },
+  {
+    "filename": "sampleip_kern.o",
+    "summary": "This eBPF program appears to be running at an XDP hook point. It performs a map lookup and update operation, incrementing a counter each time it executes. The core logic is to count packets based on some criteria (likely port or destination), as indicated by the repeated map update instruction.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1296
+  },
+  {
+    "filename": "sock_flags_kern.o",
+    "summary": "This eBPF program appears to be a custom classifier or filter that operates at the XDP hook point. It performs several operations, including reading packet metadata and updating maps. The core logic involves checking various conditions based on the packet's contents and performing actions like passing or dropping packets accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 9856
+  },
+  {
+    "filename": "socket_cookie_prog.o",
+    "summary": "This eBPF program operates at the TC hook point to process network packets. It performs map operations such as lookup and update, and includes packet handling logic to redirect or pass packets based on specific conditions related to port numbers and addresses. The core logic involves filtering traffic based on these conditions and updating a map with relevant information.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 448096
+  },
+  {
+    "filename": "sockex1_kern.o",
+    "summary": "This eBPF program appears to operate at the `XDP` hook point. It performs a series of operations including reading packet data, looking up and updating an eBPF map (`MAP_LOOKUP`), and counting packets by modifying a value in a shared memory location (`lock *(u64 *)(r0 + 0x0) += r1`). The core logic seems to involve counting or processing packets based on their characteristics.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 9128
+  },
+  {
+    "filename": "sockex2_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes incoming network packets. It checks packet headers for specific protocols and ports, then updates counters in maps based on the packet content. If certain conditions are met (e.g., a specific port number), it increments counters; otherwise, it continues processing or drops the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 23496
+  },
+  {
+    "filename": "sockex3_kern.o",
+    "summary": "This eBPF program operates as an XDP hook and performs packet filtering based on specific port numbers. It uses maps for lookup to check if a packet's destination port matches predefined values, updating counters or redirecting traffic accordingly. If the packet's port does not match any criteria, it is dropped; otherwise, it is passed or redirected.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 36304
+  },
+  {
+    "filename": "sockfilter.bpf.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes incoming network packets. It performs several operations, including reading and updating packet metadata using map lookups and updates, filtering traffic based on port numbers, and potentially redirecting or dropping packets. The core logic involves checking specific fields in the packet headers and making decisions based on their values.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Misc eBPF Samples",
+    "file_size": 14264
+  },
+  {
+    "filename": "sockmap.o",
+    "summary": "The eBPF program is an XDP hook that initializes registers and calls a helper function at address 0x34 before exiting. No specific map operations, packet handling behavior, or core logic are evident from the provided FCFG data.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Misc eBPF Samples",
+    "file_size": 5848
+  },
+  {
+    "filename": "sockmap_parse_prog.o",
+    "summary": "This eBPF program appears to be an XDP (eXpress Data Path) hook that processes network packets. It reads values from packet metadata using `PKT_READ` instructions and performs map operations with `MAP_LOOKUP` and `MAP_UPDATE`. The core logic involves filtering traffic based on port numbers, specifically dropping packets if they exceed a certain count stored in a map. If the condition is met, it updates the map with a new value and potentially redirects or modifies the packet before exiting.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 9808
+  },
+  {
+    "filename": "sockmap_verdict_prog.o",
+    "summary": "This eBPF program appears to operate at the packet level, likely as an XDP or TC hook. It reads packet data from specified offsets and modifies certain bytes within the packet header. The program updates two maps with specific values based on packet contents, but it does not drop, pass, or redirect packets; instead, it seems to perform internal processing using the map updates.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Socket/Networking",
+    "category": "Linux Kernel Testing",
+    "file_size": 11856
+  },
+  {
+    "filename": "stackok.o",
+    "summary": "This eBPF program hooks into an XDP point. It initializes a series of 192 memory addresses to zero, then calls a helper function (HELPER_7) and returns its result after processing some data based on the helper's output. The core logic involves reading a byte from a specific offset in the packet buffer and manipulating it using bitwise operations before exiting.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 4680
+  },
+  {
+    "filename": "store_map_value_in_map.o",
+    "summary": "This eBPF program appears to be an XDP (eXpress Data Path) hook that performs a lookup operation on a map using packet metadata. If the lookup is successful, it updates another map with a value of 0. If the lookup fails or if any other condition triggers, the packet is dropped.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 5784
+  },
+  {
+    "filename": "syscall_tp_kern.o",
+    "summary": "This eBPF program appears to be an XDP filter that performs packet manipulation and counting using maps. It initializes several registers, updates a map with a lookup operation, increments a counter, and then exits without dropping or redirecting packets. The core logic involves updating a map entry based on some condition (likely related to packet attributes).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1864
+  },
+  {
+    "filename": "tail_call.o",
+    "summary": "This eBPF program is an XDP hook that performs a simple operation: it returns 0x2a and exits, which typically indicates that the packet should be passed unchanged. There are no map operations or packet handling behaviors like drop or redirect in this snippet. The core logic appears to be a placeholder or minimal implementation without any specific filtering or counting functionality.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6264
+  },
+  {
+    "filename": "task_fd_query_kern.o",
+    "summary": "This eBPF program consists of two basic blocks that both initialize register `r0` to `0x0` and then exit, indicating no further action is taken. There are no map operations, packet handling behaviors, or core logic visible in this FCFG snippet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1160
+  },
+  {
+    "filename": "task_iter.bpf.o",
+    "summary": "This eBPF program appears to be running as an XDP hook. It performs operations on packet metadata and updates maps, potentially for tracking or filtering purposes. The core logic involves looking up and updating values in maps based on specific conditions extracted from packets, and it may drop or redirect packets based on the results of these operations.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 461552
+  },
+  {
+    "filename": "tc.bpf.o",
+    "summary": "This eBPF program appears to be executed at the `tc_ingress` hook point. It checks if a certain condition is met by examining memory addresses and performing operations like packet reads (`PKT_READ`). The core logic involves updating or looking up values in maps, potentially for traffic filtering based on port numbers. If conditions are not met, it may drop packets; otherwise, it passes them along (`exit` without modification).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 10776
+  },
+  {
+    "filename": "tc_bench01_redirect_kern.o",
+    "summary": "This eBPF program appears to be attached at a packet processing hook point and performs several operations on network packets. It uses a map for lookup, updates the packet's content by swapping certain fields, and then either passes or redirects the packet based on certain conditions. The core logic involves checking packet metadata and performing conditional actions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 1488
+  },
+  {
+    "filename": "tc_l2_redirect_kern.o",
+    "summary": "This eBPF program operates as an XDP hook and processes network packets. It uses maps for lookups and updates, likely to track or filter traffic based on certain criteria such as ports or IP addresses. The core logic involves examining packet metadata and making decisions like dropping or passing the packets based on predefined rules.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 5040
+  },
+  {
+    "filename": "tcbpf1_kern.o",
+    "summary": "This eBPF program operates at the XDP hook point. It processes network packets by reading specific fields and performing actions based on their values, including updating maps for packet metadata and potentially redirecting or dropping packets.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 2224
+  },
+  {
+    "filename": "tcp_basertt_kern.o",
+    "summary": "This eBPF program appears to be attached at a network data plane hook point, likely XDP or TC. It performs several operations: it looks up values in maps, checks packet metadata, and conditionally drops or passes packets based on specific criteria (e.g., port numbers). The core logic involves filtering traffic based on certain conditions and potentially counting packets using maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1576
+  },
+  {
+    "filename": "tcp_bufs_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes network packets. It performs several operations including reading packet data, looking up and updating maps, and making decisions based on the contents of the packet, such as potentially dropping or passing the packet. The core logic involves filtering traffic based on specific criteria and counting packets in maps, likely for monitoring purposes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1656
+  },
+  {
+    "filename": "tcp_clamp_kern.o",
+    "summary": "This eBPF program operates as an XDP hook. It performs several operations on packet metadata stored in maps and uses conditional logic to either pass or drop packets based on various criteria, such as packet length and content matches. The core functionality involves counting packets and possibly redirecting them based on specific conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 2216
+  },
+  {
+    "filename": "tcp_cong_kern.o",
+    "summary": "This eBPF program appears to be executed as an XDP hook. It performs packet handling and map operations. The core logic involves looking up values in maps, updating them, and potentially dropping or redirecting packets based on conditions such as port numbers or packet content.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1736
+  },
+  {
+    "filename": "tcp_iw_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook for packet processing. It performs map operations such as lookup and update, and includes logic to redirect or pass packets based on certain conditions. The core functionality seems to involve filtering traffic and counting packet statistics in maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1824
+  },
+  {
+    "filename": "tcp_rwnd_kern.o",
+    "summary": "This eBPF program appears to be hooked at XDP or TC, as it operates on packet data. It performs operations such as map lookups and updates, and handles packets by passing them forward. The core logic involves filtering traffic based on specific criteria, likely related to port numbers or other metadata extracted from the packet header.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1528
+  },
+  {
+    "filename": "tcp_synrto_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that operates on network packets. It checks various packet fields and uses maps for data lookup, update, and storage. The core logic involves filtering traffic based on specific conditions and potentially redirecting or dropping packets based on the outcomes of these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1512
+  },
+  {
+    "filename": "tcpconnect.bpf.o",
+    "summary": "This eBPF program appears to operate as a network traffic handler at the TC hook point. It performs map operations such as lookup and update, primarily used for counting packets that match certain criteria (e.g., port numbers). The core logic involves filtering or passing network packets based on conditions met during packet handling.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Performance Tracing (BCC)",
+    "file_size": 469328
+  },
+  {
+    "filename": "tcprtt_bpf_bpfel.o",
+    "summary": "This eBPF program operates as an XDP hook. It performs a series of map operations, including reading and writing to maps, and handles packet processing by copying data from one buffer to another. The core logic involves filtering traffic based on port numbers and updating a map with relevant information. If the condition in BB0 is not met (i.e., `r1 != 0x2`), it calls HELPER_137, which likely performs additional packet processing or redirection.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 4040
+  },
+  {
+    "filename": "tcprtt_sockops_bpf_bpfel.o",
+    "summary": "This eBPF program operates as an XDP filter to inspect and manipulate network packets. It performs several map operations including lookups, updates, and deletes. The core logic involves examining packet metadata (like ports and addresses) to decide whether to pass or drop packets based on certain conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 7984
+  },
+  {
+    "filename": "tcx_bpf_bpfel.o",
+    "summary": "This eBPF program is likely attached to an eXpress Data Path (XDP) hook point. It performs two basic operations: incrementing a counter located at memory address `0x0` by 1 each time it runs, and then exiting without any packet handling or further actions. The core logic of this program involves maintaining a simple count in the map, which could be used for monitoring purposes or as part of more complex traffic control mechanisms.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2408
+  },
+  {
+    "filename": "test_cgrp2_tc_kern.o",
+    "summary": "This eBPF program operates at the XDP hook point. It performs packet read operations and map lookups to filter incoming packets based on certain conditions. The core logic involves counting packets in a map and potentially redirecting them if they match specific criteria. If no conditions are met, it drops the packet or passes it along unchanged.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "TC Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1768
+  },
+  {
+    "filename": "test_current_task_under_cgroup_kern.o",
+    "summary": "This eBPF program appears to be attached at a hook point such as XDP or TC. It performs operations on packet metadata and a BPF map, possibly for traffic filtering or statistics tracking. Specifically, it uses `MAP_LOOKUP` and `MAP_UPDATE` instructions, and its core logic involves handling packets based on certain conditions, likely related to port numbers or other packet attributes. If the condition is not met (i.e., `r0 == 0x0`), the program may drop the packet; otherwise, it proceeds with no specific action indicated by the given summary.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1408
+  },
+  {
+    "filename": "test_map_in_map_kern.o",
+    "summary": "This eBPF program appears to be executed as a TC (Traffic Control) hook. It performs several operations including packet read, map update, and map lookup. The core logic involves filtering traffic based on port numbers, with specific actions taken for different port values.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 3080
+  },
+  {
+    "filename": "test_overhead_kprobe_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes incoming network packets. It performs several map operations, including lookups and updates, and manipulates packet data by modifying fields like ports and IP addresses. The core logic involves filtering traffic based on specific conditions and possibly redirecting or dropping packets.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Kprobe",
+    "category": "Linux Kernel Testing",
+    "file_size": 1448
+  },
+  {
+    "filename": "test_overhead_raw_tp_kern.o",
+    "summary": "This eBPF program is designed to exit without performing any action, as both basic blocks [BB0] and [BB1] set register `r0` to 0x0 and then immediately exit. There are no hook points, map operations, or packet handling behaviors present. The core logic of the program is non-existent; it simply terminates execution without making any decisions or performing any tasks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1048
+  },
+  {
+    "filename": "test_overhead_tp_kern.o",
+    "summary": "The eBPF program appears to be an exit hook that simply exits without performing any operations. It does not interact with maps, handle packet data, or apply any filtering logic. The core functionality is minimal and consists solely of terminating execution at each basic block (BB0 and BB1).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1056
+  },
+  {
+    "filename": "test_probe_write_user_kern.o",
+    "summary": "This eBPF program operates as an XDP hook, inspecting packet metadata. It performs a lookup in a map and updates it with specific fields from the packet if a condition is met (if the packet length exceeds 0x10 bytes). If the map update fails, it increments a counter in another part of the eBPF map. The core logic involves filtering or counting packets based on their size.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Linux Kernel Testing",
+    "file_size": 1480
+  },
+  {
+    "filename": "trace_event_kern.o",
+    "summary": "The eBPF program appears to be a TC (Traffic Control) hook point filter that processes network packets. It performs several map operations, including updates and lookups, to track and manipulate packet data. The core logic involves filtering and redirecting packets based on certain conditions, such as checking the destination port or IP address of the packets.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 2648
+  },
+  {
+    "filename": "trace_output_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs a lookup operation in a map, then passes control to another function. The core logic involves handling a packet by passing it along without any modification or drop.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 6552
+  },
+  {
+    "filename": "tracepoint_in_c_bpf_bpfel.o",
+    "summary": "This eBPF program appears to operate as an XDP hook. It performs a `MAP_LOOKUP` operation on a specific map, then updates another map using `MAP_UPDATE`. The core logic involves locking and modifying a counter within the map, suggesting it is used for counting or tracking purposes, possibly related to packet traffic metrics.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 2880
+  },
+  {
+    "filename": "tracex1_kern.o",
+    "summary": "This eBPF program appears to be an XDP or TC hook that processes network packets. It involves map operations such as lookup and update, and packet handling behavior includes modifying packet headers and potentially redirecting them. The core logic seems to involve filtering traffic based on specific conditions (e.g., port numbers) and updating metadata in maps for further processing or monitoring.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 235888
+  },
+  {
+    "filename": "tracex2_kern.o",
+    "summary": "This eBPF program operates at the TC hook point and performs several key operations: it maps lookup and update operations, processes packet metadata, and selectively modifies packet behavior. The core logic involves counting packets based on specific criteria (e.g., port numbers) in a map, and conditionally modifying packet forwarding decisions (pass, drop).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 14784
+  },
+  {
+    "filename": "tracex3_kern.o",
+    "summary": "This eBPF program appears to be a TC hook that performs packet filtering and counting. It uses a hash map for lookups, updates, and deletions. The core logic involves checking packet metadata, possibly port numbers or other attributes, and deciding whether to pass or drop the packet based on these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 13040
+  },
+  {
+    "filename": "tracex4_kern.o",
+    "summary": "This eBPF program appears to operate as an XDP hook. It performs operations on eBPF maps, including map lookups and updates, while handling packet data. The core logic seems to involve filtering or modifying network packets based on specific criteria, such as port numbers or other metadata stored in the maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 9080
+  },
+  {
+    "filename": "tracex5_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes incoming network packets. It performs various operations including packet manipulation, map lookups and updates, and logging. The core logic involves filtering traffic based on specific conditions and updating maps with relevant information.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 2936
+  },
+  {
+    "filename": "tracex6_kern.o",
+    "summary": "The eBPF program appears to be attached at a hook point, likely XDP or TC, as it involves packet handling. It performs map operations such as lookup and update, manipulating packet metadata (e.g., port numbers) based on the content of maps. The core logic seems to involve filtering or modifying packets based on certain criteria, potentially redirecting them or dropping them under specific conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 11408
+  },
+  {
+    "filename": "tracex7_kern.o",
+    "summary": "This eBPF program appears to be a simple drop filter that hooks at an unknown point (XDP, TC, Kprobe). It initializes registers and exits immediately without performing any map operations or packet handling. The core logic is not evident from the provided FCFG data.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Tracepoint",
+    "category": "Linux Kernel Testing",
+    "file_size": 5144
+  },
+  {
+    "filename": "twomaps.o",
+    "summary": "This eBPF program appears to be an XDP hook that operates on network packets. It checks a specific bit in a variable and uses a map for lookup operations. If certain conditions are met, it may pass or redirect the packet based on the map's contents. The core logic seems to involve filtering or counting packets based on metadata stored in the map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6376
+  },
+  {
+    "filename": "twomaps_btf.o",
+    "summary": "This eBPF program appears to be an XDP hook point that processes incoming network packets. It checks if a specific condition is met (`call 0x7; r0 &= 0x1`) and then performs actions based on the result. If the condition is true, it maps a value into a map using `MAP_LOOKUP` and potentially updates another map with `*(u64 *)(r1 + 0x0)`. The program does not explicitly drop or redirect packets but appears to perform operations based on packet data stored in maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6032
+  },
+  {
+    "filename": "twostackvars.o",
+    "summary": "The eBPF program appears to be executing at a network hook point (likely XDP or TC) and involves several map operations such as lookups and updates. It also manipulates packet data by writing values to specific memory locations. The core logic seems to involve counting packets in maps and potentially redirecting or modifying packets based on certain conditions.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 7112
+  },
+  {
+    "filename": "twotypes.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs packet filtering based on certain conditions. It uses a map for lookup operations and makes decisions to pass or drop packets. The core logic involves checking specific fields of the packet, updating a map with lookup results, and making exit decisions based on these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 6136
+  },
+  {
+    "filename": "uprobe.bpf.o",
+    "summary": "This eBPF program appears to be attached at the `Kprobe` hook point, likely for kernel function entry. It performs several map operations such as looking up (`MAP_LOOKUP`) and updating (`MAP_UPDATE`) values in maps. The core logic involves checking packet metadata (possibly source or destination ports) and potentially updating counters or other state in a map based on these checks.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 11400
+  },
+  {
+    "filename": "uretprobe_bpf_x86_bpfel.o",
+    "summary": "This eBPF program appears to be an XDP hook that processes network packets. It reads data from a packet, updates a map with the result of a function call, and then passes the packet. The core logic involves counting packets based on a condition (likely port number) and storing the count in a map for later use.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Cloud Native Networking (Cilium)",
+    "file_size": 3024
+  },
+  {
+    "filename": "usdt.bpf.o",
+    "summary": "This eBPF program appears to be hooked at an XDP or TC point and performs packet filtering. It looks up values in maps, updates them, and checks packet data for specific conditions before deciding whether to pass or drop the packet. The core logic involves counting packets based on certain criteria and updating a map with the counts.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 21208
+  },
+  {
+    "filename": "vlan_filter.o",
+    "summary": "The eBPF program appears to be an XDP hook that processes incoming packets. It checks the packet's source port by reading it from the network header (offset 0x18) and stores it in `r1`. Depending on whether the port is 0x2 or 0x4, it either passes the packet (`goto LBB0_3`) or drops it (`exit`). The core logic involves filtering traffic based on the source port.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 768
+  },
+  {
+    "filename": "wronghelper.o",
+    "summary": "This eBPF program appears to be executed at an egress hook point such as XDP or TC. It updates a map with a value of 0 and then exits without performing any packet manipulation (no drop, pass, or redirect). The core logic involves updating a map entry located at `r10 - 0x4` with the value stored in `w2`.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "Other eBPF",
+    "category": "Misc eBPF Samples",
+    "file_size": 8024
+  },
+  {
+    "filename": "xdp1_kern.o",
+    "summary": "The eBPF program appears to be an XDP hook that processes network packets. It checks specific packet headers and ports, updates a map if certain conditions are met (e.g., mapping an IP address), and performs actions based on packet content or header values. The core logic involves filtering traffic based on port numbers and updating a map entry when a match is found.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1784
+  },
+  {
+    "filename": "xdp2_kern.o",
+    "summary": "This eBPF program appears to be a TC (Traffic Control) filter that operates on packet metadata. It checks specific fields within a packet and uses maps for operations like lookup and update. The core logic seems to involve filtering traffic based on certain port values and updating counters in a map. If the conditions are met, it modifies the packet's header fields before passing or dropping the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1920
+  },
+  {
+    "filename": "xdp2skb_meta_kern.o",
+    "summary": "This eBPF program appears to operate at a network hook point such as XDP or TC. It performs operations on a map, including lookups and updates. The core logic involves reading packet data and updating the state of the map based on this data, potentially used for tracking or filtering purposes.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1152
+  },
+  {
+    "filename": "xdp_adjust_tail_kern.o",
+    "summary": "This eBPF program operates at a packet hook point, likely XDP. It performs several operations including reading and updating values in maps, specifically performing map lookups and updates. The core logic involves processing network packets: it reads specific fields from incoming packets, modifies them, and then uses these modifications to update the state of a map, which could be used for tracking or filtering purposes. The program does not explicitly drop or redirect packets but rather manipulates their metadata based on content and updates the internal state accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 2016
+  },
+  {
+    "filename": "xdp_bench01_mem_access_cost_kern.o",
+    "summary": "This eBPF program appears to be an XDP filter that processes network packets. It reads packet metadata and performs various operations, including updating maps with packet information. The core logic involves filtering traffic based on certain conditions and counting packets using eBPF maps.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 1952
+  },
+  {
+    "filename": "xdp_bench02_drop_pattern_kern.o",
+    "summary": "This eBPF program appears to operate as a network filter and counter at an XDP hook point. It performs operations such as reading packet metadata, looking up values in maps, updating counters, and potentially dropping or passing packets based on certain conditions, such as matching specific ports or protocols.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 2896
+  },
+  {
+    "filename": "xdp_bpf_bpfel.o",
+    "summary": "This eBPF program operates as an XDP hook to process network packets. It checks if the packet is of type IPv4, reads the source port from the packet, and updates a map with this port value. If the operation fails, it exits; otherwise, it increments a counter for the port in the map and then exits.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 3224
+  },
+  {
+    "filename": "xdp_ddos01_blacklist_kern.o",
+    "summary": "This eBPF program appears to operate at the XDP hook point for packet processing. It performs several operations including reading packet data, updating maps, and potentially filtering or redirecting packets based on certain conditions. The core logic involves checking packet metadata and updating counters in a map, which suggests it might be used for traffic analysis or monitoring.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 3448
+  },
+  {
+    "filename": "xdp_drop_kern.o",
+    "summary": "This eBPF program appears to be attached at an XDP hook point. It reads packet metadata and performs actions based on certain conditions: it drops packets if they do not meet specific criteria (e.g., source port), updates or increments a map entry with packet data, and finally exits. The core logic involves filtering traffic based on packet attributes and maintaining state in a map for further processing or analysis.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 3224
+  },
+  {
+    "filename": "xdp_filter.o",
+    "summary": "This eBPF program appears to be an XDP (eXpress Data Path) function designed for packet classification and handling. It performs various operations such as looking up and updating maps, reading packets, and conditional logic based on packet content. The core functionality seems to involve filtering traffic based on specific port numbers or other criteria, and potentially redirecting or dropping packets accordingly.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 4512
+  },
+  {
+    "filename": "xdp_fwd_kern.o",
+    "summary": "This eBPF program operates as an XDP hook. It handles incoming network packets by examining their metadata and updating various maps with packet information. The core logic involves filtering traffic based on specific criteria (e.g., port numbers) and counting packets in these maps. Depending on the results, it may drop or pass packets accordingly.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 4048
+  },
+  {
+    "filename": "xdp_monitor_kern.o",
+    "summary": "The eBPF program appears to be an XDP (eXpress Data Path) hook that operates on network packets. It includes map operations for lookup and update, specifically targeting a map entry referenced by `r0`. The core logic seems to involve reading packet metadata, potentially checking ports or other criteria, and then updating a counter in the map based on some condition. If the packet does not meet certain conditions, it may be passed through; otherwise, it is counted in the map and possibly dropped or redirected.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 2624
+  },
+  {
+    "filename": "xdp_redirect_cpu_kern.o",
+    "summary": "This eBPF program is an XDP hook that processes network packets. It performs map operations such as looking up and updating entries, and it drops or passes packets based on certain conditions, likely filtering traffic based on ports or other attributes. The core logic involves checking packet metadata and making decisions to either pass or drop the packet, while also maintaining state in a map for further processing or statistics collection.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 11464
+  },
+  {
+    "filename": "xdp_redirect_err_kern.o",
+    "summary": "This eBPF program appears to be an XDP hook that performs packet processing. It checks for specific packet content using PKT_READ operations and updates a map with packet-related data using MAP_LOOKUP and MAP_UPDATE. If conditions are met, it redirects packets; otherwise, it passes them through unchanged. The core logic involves filtering or modifying packet headers based on certain criteria before deciding whether to pass or redirect the packet.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 2232
+  },
+  {
+    "filename": "xdp_redirect_kern.o",
+    "summary": "The eBPF program appears to operate as a packet processing function at an unknown hook point (XDP, TC, Kprobe). It performs operations on maps for lookup and update. The core logic involves counting packets in a map and potentially modifying packet data, possibly including swapping MAC addresses. There is also conditional exit based on the outcome of these operations.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1736
+  },
+  {
+    "filename": "xdp_redirect_map_kern.o",
+    "summary": "This eBPF program appears to be an XDP (eXpress Data Path) hook that performs packet processing. It involves reading a packet's data, updating a counter in a map, and then passing the packet along unchanged. The core logic is to count packets based on certain criteria (possibly port numbers or other fields).",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1680
+  },
+  {
+    "filename": "xdp_root.o",
+    "summary": "This eBPF program appears to be executed at an XDP hook point. It performs three consecutive map operations (lookup) using different keys (0x0, 0x1, 0x2), and then increments a counter in a shared memory map (`w0 = 0x2`). The core logic involves interacting with maps and updating a counter, suggesting it might be used for traffic monitoring or filtering.",
+    "source_repo": "unknown",
+    "prog_type": "unknown",
+    "category": "unknown",
+    "file_size": 5968
+  },
+  {
+    "filename": "xdp_router_ipv4_kern.o",
+    "summary": "This eBPF program appears to be attached at the XDP hook point. It processes packets by reading various fields, performing conditional checks, and interacting with maps through lookup and update operations. The core logic involves filtering traffic based on specific port numbers and updating counters in maps. If a packet meets certain criteria, it may be dropped or passed.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 2600
+  },
+  {
+    "filename": "xdp_rxq_info_kern.o",
+    "summary": "This eBPF program appears to be running as an XDP hook. It performs several operations including map lookups and updates, which suggest it might be implementing some form of packet filtering or counting logic based on certain criteria (like port numbers). The core behavior seems to involve modifying packet data in a loop until a condition is met before exiting, potentially for purposes like packet redirection or modification.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 2008
+  },
+  {
+    "filename": "xdp_sample_pkts_kern.o",
+    "summary": "This eBPF program appears to be an XDP or TC hook that processes network packets. It reads packet metadata, updates maps with specific values, and then traces the packet using `TRACE_PRINTK`. The core logic involves filtering traffic based on port numbers and updating counters in a map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1672
+  },
+  {
+    "filename": "xdp_tcpdump_kern.o",
+    "summary": "This eBPF program appears to be an XDP (eXpress Data Path) hook that processes incoming network packets. It performs several operations: it reads packet metadata, updates map entries, and makes decisions based on the data read from the maps. The core logic involves filtering traffic based on specific criteria and updating counters or flags in a map.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 1248
+  },
+  {
+    "filename": "xdp_ttl_kern.o",
+    "summary": "This eBPF program appears to be an XDP filter that processes incoming network packets. It checks various packet fields, such as the protocol and source/destination ports, and performs actions like dropping or passing packets based on these conditions. The core logic involves filtering traffic based on specific port values and updating a map with packet counts.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 1528
+  },
+  {
+    "filename": "xdp_tx_iptunnel_kern.o",
+    "summary": "This eBPF program appears to be hooked at an unknown point, as the specific hook type is not clearly indicated. It involves several map operations such as lookup and update, indicating it may be used for packet processing or metadata management. The core logic seems to involve filtering packets based on their contents, possibly through a series of conditional checks and updates in maps, with the potential outcome being either packet drop or modification.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 3728
+  },
+  {
+    "filename": "xdp_vlan01_kern.o",
+    "summary": "The eBPF program appears to be an XDP (eXpress Data Path) hook that processes network packets. It checks for specific values in packet headers using memory lookups and conditional branches. If certain conditions are met, it modifies packet fields or passes them along unchanged. The core logic involves filtering traffic based on port numbers and updating a map with packet information.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Misc eBPF Samples",
+    "file_size": 2720
+  },
+  {
+    "filename": "xdpsock_kern.o",
+    "summary": "This eBPF program appears to operate as an XDP filter. It initializes registers and calls a helper function at the start. The primary logic involves performing a `MAP_LOOKUP` operation, likely to check if a certain condition is met (possibly based on packet metadata). If this condition is not met, it drops the packet by calling a helper function and exiting. Otherwise, it continues without modifying the packet, suggesting it might be counting packets in a map or filtering traffic based on specific criteria.",
+    "source_repo": "ebpf-samples",
+    "prog_type": "XDP Hook",
+    "category": "Linux Kernel Testing",
+    "file_size": 1368
+  }
+]
