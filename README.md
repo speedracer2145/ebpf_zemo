@@ -79,4 +79,4 @@ zemo summary fexit_sleep.o
 - `ebpf_embed/cli.py`: Primary command-line interface.
 
 ## ⚖️ License
-MIT License. See [LICENSE](LICENSE) for details.
+
